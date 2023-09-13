@@ -1,0 +1,68 @@
+/* Color Theme Swatches in Hex */
+.color-theme_aa-1-hex { color: #F20CCC; }
+.color-theme_aa-2-hex { color: #A6088C; }
+.color-theme_aa-3-hex { color: #593C54; }
+.color-theme_aa-4-hex { color: #AE14D9; }
+.color-theme_aa-5-hex { color: #4A1259; }
+
+
+* {
+    margin: 0;
+}
+p {
+}
+
+/*Header*/
+nav {
+    height: 20vh;
+    background-color: #A6088C;
+}
+.barra-nav {
+    display: flex;
+}
+.barra-nav img{
+    height:100px;
+}
+.barra-nav form{
+    margin-top: 100px;
+    margin-left: 140px;
+    display: flex;
+    padding: 20px;
+}
+
+
+/*Body*/
+.fondo-body {
+    height: 50vh;
+    padding: 200px;
+    /*background-image:url("/images/aa.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+.bienvenida{
+    height: 70vh;
+}
+
+
+/*Sections*/
+.vista-productos {
+    display: flex;
+    justify-content:space-around;
+    background-color: #F20CCC;
+    width: 90%;
+    flex-direction: row;
+}
+.vista-productos div {
+    margin: 5px;
+    background-color: aquamarine;
+    padding: 25;
+}
+
+/*footer*/
+.list-nav {
+
+}
+.list-nav  {
+    list-style: none;
+}
