@@ -1,68 +1,72 @@
 /* Color Theme Swatches in Hex */
-.color-theme_aa-1-hex { color: #F20CCC; }
-.color-theme_aa-2-hex { color: #A6088C; }
-.color-theme_aa-3-hex { color: #593C54; }
-.color-theme_aa-4-hex { color: #AE14D9; }
-.color-theme_aa-5-hex { color: #4A1259; }
+.color-theme_a-1-hex { color: #BFB6AE; }
+.color-theme_a-2-hex { color: #402516; }
+.color-theme_a-3-hex { color: #A6633C; }
+.color-theme_a-4-hex { color: #A68776; }
+.color-theme_a-5-hex { color: #A6341B; }
 
 
 * {
     margin: 0;
 }
-p {
-}
 
 /*Header*/
 nav {
-    height: 20vh;
-    background-color: #A6088C;
+    height: 10vh;
+    background-color: #BFB6AE;
 }
 .barra-nav {
     display: flex;
 }
-.barra-nav img{
-    height:100px;
-}
+
 .barra-nav form{
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 140px;
-    display: flex;
-    padding: 20px;
 }
 
 
 /*Body*/
-.fondo-body {
-    height: 50vh;
-    padding: 200px;
-    /*background-image:url("/images/aa.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;*/
+.bienvenida {
+    margin: 30px;
 }
-.bienvenida{
-    height: 70vh;
-}
-
 
 /*Sections*/
 .vista-productos {
+    background-color: #BFB6AE; 
+    width: 90vh;
     display: flex;
-    justify-content:space-around;
-    background-color: #F20CCC;
-    width: 90%;
-    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 50px;
 }
-.vista-productos div {
-    margin: 5px;
-    background-color: aquamarine;
-    padding: 25;
+
+.prod {
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #ccc5bf;
+    text-align: center; /* Centra el contenido dentro de cada .prod horizontalmente */
+    padding: 10px; /* Agrega espacio interno para separar el contenido del borde */
+   /*  max-width: 300px; Limita el ancho máximo de cada .prod (ajusta según sea necesario) */
 }
+.imagen-prod-container {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+.prod img {
+    max-width: 100%; /* Establece el ancho máximo al 100% del contenedor */
+    max-height: 100%; /* Establece la altura máxima al 100% del contenedor */
+}
+.prod:hover img {
+    transform: scale(1.1); /* Cambia la escala de la imagen en un 10% al hacer hover */
+    transition: 0.6s;
+}
+
+
+
 
 /*footer*/
-.list-nav {
 
-}
 .list-nav  {
     list-style: none;
 }
