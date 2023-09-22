@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,64 +17,71 @@
                 <div class="buscar">
                     <form action="#">
                         <label for="gsearch">Busca en la web:</label>
-                        <input type="search" id="gsearch" name="gsearch">
+                        <input type="search" id="gsearch" name="gsearch"><!--name:los 
+                            datos ingresados en este campo se enviarán con el nombre 
+                            "gsearch" al servidor-->
                         <input type="submit">
                     </form>
                 </div>
             </div>
-            <div class="links-nav">
-                <ul>
-                    <li class="links-nav-li"><a href="#">Inicio</a></li>
-                    <li class="links-nav-li"><a href="#">Remeras</a></li>
-                    <li class="links-nav-li"><a href="#">Sweaters</a></li>
-                    <li class="links-nav-li"><a href="#">Accesorios</a></li>
+            <div class="nav__links_principal">
+                <ul class="nav__links_principal-ul">
+                    <li class="nav__links_principal-li"><a href="#">Inicio</a></li>
+                    <li class="nav__links_principal-li"><a href="#">Remeras</a></li>
+                    <li class="nav__links_principal-li"><a href="#">Sweaters</a></li>
+                    <li class="nav__links_principal-li"><a href="#">Accesorios</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="bienvenida">
-            <img src="images/f.jpg" height="500px" alt="">
-        </div>
     </header>
 
-    <article class="vista-productos">
-        <div class="prod">
-            <h3>Remeras</h3>
-            <div class="imagen-prod-container">
-                <img src="images/a.jpg" alt="remeras de mujer">
+    <main>
+        <div class="bienvenida">
+            <img src="/images/bienv.jpg" alt="Imagen Bienvenida">
+        </div>
+
+        <article class="vista-productos">
+            <div class="prod">
+                <h3>Remeras</h3>
+                <div class="imagen-prod-container">
+                    <img src="images/a.jpg" alt="remeras de mujer">
+                </div>
             </div>
-        </div>
-        <div class="prod">
-            <h3>Sweaters</h3>
-            <div class="imagen-prod-container">
-                <img src="images/b.jpg"alt="sweaters de temporada">
+            <div class="prod">
+                <h3>Sweaters</h3>
+                <div class="imagen-prod-container">
+                    <img src="images/b.jpg" alt="sweaters de temporada">
+                </div>
             </div>
-        </div>
-        <div class="prod">
-            <h3>Media estación</h3>
-            <div class="imagen-prod-container">
-                <img src="images/c.jpg"alt="ropa de media estación">
-            </div>           
-        </div>
-        <div class="prod">
-            <h3>Media estación</h3>
-            <div class="imagen-prod-container">
-                <img src="images/e.jpg"alt="ropa de media estación">
-            </div>           
-        </div>
-    </article>
-    <article class="barra-inferior">
-        <div class="barra-inferior-item">
-            <p>
-                <i class="fa fa-motorcycle" aria-hidden="true"></i>
-                Envios gratis en compras <br>mayores a $25.000
-            </p>
-        <div class="barra-inferior-item">
-            <p>
-                <i class="fa fa-recycle" aria-hidden="true"></i>
-                CAMBIOS SIN CARGO <br> tenés 30 días para cambiar tu pedido. 
-            </p>
-        </div>
-    </article>
+            <div class="prod">
+                <h3>Media estación</h3>
+                <div class="imagen-prod-container">
+                    <img src="images/c.jpg" alt="ropa de media estación">
+                </div>
+            </div>
+            <div class="prod">
+                <h3>Media estación</h3>
+                <div class="imagen-prod-container">
+                    <img src="images/e.jpg" alt="ropa de media estación">
+                </div>
+            </div>
+        </article>
+        <article class="barra-inferior">
+            <div class="barra-inferior-item">
+                <p>
+                    <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                    Envios gratis en compras <br>mayores a $25.000
+                </p>
+                <div class="barra-inferior-item">
+                    <p>
+                        <i class="fa fa-recycle" aria-hidden="true"></i>
+                        CAMBIOS SIN CARGO <br> tenés 30 días para cambiar tu pedido.
+                    </p>
+                </div>
+        </article>
+    </main>
+
+
 
     <footer>
         <div>
@@ -84,4 +93,5 @@
         </div>
     </footer>
 </body>
+
 </html>
