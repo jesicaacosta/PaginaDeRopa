@@ -12,10 +12,10 @@
 <body>
     <header>
         <nav>
-            <div class="barra-nav">
-                <img src="images/f.png" width="200px" alt="">
+            <div class="barra__nav">
+                <img src="images/f.png" width="200px" alt="logo">
                 <div class="buscar">
-                    <form action="#">
+                    <form action="#" class="barra__nav__buscar">
                         <label for="gsearch">Busca en la web:</label>
                         <input type="search" id="gsearch" name="gsearch"><!--name:los 
                             datos ingresados en este campo se enviarán con el nombre 
@@ -26,46 +26,49 @@
             </div>
             <div class="nav__links_principal">
                 <ul class="nav__links_principal-ul">
-                    <li class="nav__links_principal-li"><a href="#">Inicio</a></li>
+                    <li class="nav__links_principal-li">
+                            <a href="#">Inicio</a></li>
                     <li class="nav__links_principal-li"><a href="#">Remeras</a></li>
                     <li class="nav__links_principal-li"><a href="#">Sweaters</a></li>
                     <li class="nav__links_principal-li"><a href="#">Accesorios</a></li>
                 </ul>
             </div>
+            <div class="bienvenida">
+                <img src="images/bienv.jpg" alt="Imagen Bienvenida">
+            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="bienvenida">
-            <img src="images/bienv.jpg" alt="Imagen Bienvenida">
-        </div>
+<main>
 
         <article class="vista-productos">
-            <div class="prod">
+            <div class="vista__productos-container">
                 <h3>Remeras</h3>
-                <div class="imagen-prod-container">
-                    <img src="images/a.jpg" alt="remeras de mujer">
+                <div class="vista__productos-container-img">
+                    <a href="#"><img src="images/a.jpg"  alt="remeras de mujer"></a>
                 </div>
             </div>
-            <div class="prod">
+            <div class="vista__productos-container">
                 <h3>Sweaters</h3>
-                <div class="imagen-prod-container">
-                    <img src="images/b.jpg" alt="sweaters de temporada">
+                <div class="vista__productos-container-img">
+                    <a href="#"><img src="images/b.jpg" alt="sweaters de temporada"></a>
                 </div>
             </div>
-            <div class="prod">
+            <div class="vista__productos-container">
                 <h3>Media estación</h3>
-                <div class="imagen-prod-container">
-                    <img src="images/c.jpg" alt="ropa de media estación">
+                <div class="vista__productos-container-img">
+                    <a href="#"><img src="images/c.jpg" alt="ropa de media estación">
+                    </a>
                 </div>
             </div>
-            <div class="prod">
+            <div class="vista__productos-container">
                 <h3>Media estación</h3>
-                <div class="imagen-prod-container">
-                    <img src="images/e.jpg" alt="ropa de media estación">
+                <div class="vista__productos-container-img">
+                    <a href=""><img src="images/e.jpg" alt="ropa de media estación"></a>
                 </div>
             </div>
         </article>
+
         <article class="barra-inferior">
             <div class="barra-inferior-item">
                 <p>

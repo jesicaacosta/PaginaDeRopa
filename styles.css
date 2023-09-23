@@ -8,45 +8,53 @@ body {
 
 /* Estilos para el encabezado (header) */
 header {
+    background-color: #af611c;
+    display: flex;
+    align-items: center;
+}
+.barra__nav {
+    display: block;
+    height: 150px;
+    width: 100%;
+    position: fixed;
     background-color: #BFB6AE;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-/* Estilos para la imagen de bienvenida */
-.bienvenida img {
-    max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto original */
-    display: block; /* Evita el espacio adicional debajo de la imagen */
-    margin: 0 auto; /* Centra la imagen horizontalmente */
-}
-
-.barra-nav img {
+.barra__nav img {
     max-width: 100%;
-    height: auto;
-}
-
-.barra-nav form {
-    display: flex;
+    padding: 1em;
+    max-height: 80%;
     align-items: center;
 }
 
-.barra-nav label {
-    margin-right: 10px;
+.barra__nav__buscar {
+    display: flex;
+    align-content: center;    
+    margin: 0px 4em;
+}
+
+.barra__nav label { /*texto busca en la web*/
+    margin-right: 10px; 
 }
 
 .nav__links_principal {
     list-style: none;
     padding: 0;
     display: flex;
+    position: relative;
+    margin-top: 150px;
 }
 .nav__links_principal-ul {
+    width: 70%;
+    border: 5px solid rebeccapurple;
     list-style-type: none;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.nav__links_principal-li {
+    margin: 1em 2em;
+}
 
 .nav__links_principal-li a{
     text-decoration: none;
@@ -54,27 +62,41 @@ header {
     font-weight: bold; /* Añade negrita a los enlaces de navegación */
 }
 
+/* Estilos para la imagen de bienvenida */
+.bienvenida img {
+    max-width: 100%; /* La imagen se ajustará al ancho del contenedor header */
+    height: 50%; /* Mantiene la proporción de aspecto original */
+    display: block; /* Utiliza todo el ancho de la pagina*/
+    margin: 0 auto; /* Centra la imagen horizontalmente */ 
+}
+
+
 /* Estilos para los productos */
 .vista-productos {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-}
-
-.prod {
     flex: 1;
     text-align: center;
 }
+.vista__productos-container {
+    flex: 1;
+}
 
-.prod h3 {
+.vista__productos-container h3 {
     font-size: 20px;
     margin: 10px 0;
 }
 
-.imagen-prod-container img {
+.vista__productos-container-img img{
     max-width: 100%;
     height: auto;
 }
+.vista__productos-container-img :hover{
+    max-width: 110%;
+    object-fit: contain;
+}
+
 
 /* Estilos para la barra inferior */
 .barra-inferior {
