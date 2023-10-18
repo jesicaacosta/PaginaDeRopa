@@ -6,46 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>timeless ind</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contactanos.html">
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="barra__nav">
+
+            <div class="container_header1">
                 <img src="images/f.png" width="200px" alt="logo">
-                <div class="buscar">
-                    <form action="#" class="barra__nav__buscar">
-                        <label for="gsearch">Busca en la web:</label>
+                <div class="container_busqueda">
+                    <form action="#" class="form_busqueda">
+                        <label for="gsearch"> </label>
                         <input type="search" id="gsearch" name="gsearch"><!--name:los 
                             datos ingresados en este campo se enviarán con el nombre 
                             "gsearch" al servidor-->
-                        <input type="submit">
+                        <input type="submit" class="button-enviar" value="Buscar">
                     </form>
                 </div>
             </div>
-            <div class="nav__links_principal">
-                <ul class="nav__links_principal-ul">
-                    <li class="nav__links_principal-li">
-                            <a href="#">Inicio</a></li>
-                    <li class="nav__links_principal-li"><a href="#">Remeras</a></li>
-                    <li class="nav__links_principal-li"><a href="#">Sweaters</a></li>
-                    <li class="nav__links_principal-li"><a href="#">Accesorios</a></li>
-                </ul>
-            </div>
-            <div class="bienvenida">
-                <img src="images/bienv.jpg" alt="Imagen Bienvenida">
-            </div>
+
+            <ul class="container_links-nav">
+                <li> <a href="index.html">Inicio</a></li>
+                <li><a href="#">Remeras</a></li>
+                <li><a href="#">Sweaters</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+
         </nav>
     </header>
 
-<main>
+
+    <main>
+        <div class="bienvenida">
+            <img src="images/bienv.jpg" alt="Imagen Bienvenida">
+        </div>
 
         <article class="vista-productos">
             <div class="vista__productos-container">
                 <h3>Remeras</h3>
                 <div class="vista__productos-container-img">
-                    <a href="#"><img src="images/a.jpg"  alt="remeras de mujer"></a>
+                    <a href="#"><img src="images/a.jpg" alt="remeras de mujer"></a>
                 </div>
             </div>
             <div class="vista__productos-container">
@@ -69,6 +71,12 @@
             </div>
         </article>
 
+
+    </main>
+
+
+
+    <footer>
         <article class="barra-inferior">
             <div class="barra-inferior-item">
                 <p>
@@ -82,16 +90,15 @@
                     </p>
                 </div>
         </article>
-    </main>
-
-
-
-    <footer>
         <div>
             <ul class="list-nav">
-                <li><i class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</li>
+                <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true">
+                        </i> Hablanos por whatsapp:</a> </li>
+                <li><a href="contactanos.html">Contactanos</a></li>
+                <li><a href="#"> Medios de pago</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <img src="/images/f.png " alt="logo" width="100px">
             </ul>
-
             <h5>© 2023 Casiopea, Inc.</h5>
         </div>
     </footer>
