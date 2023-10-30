@@ -1,118 +1,89 @@
-/* Estilos generales */
-body {
+* {
     margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    border: 1px solid #fff;
+    margin: 5px auto;
+}
+
+/* Estilos generales */
+main {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #f0f0f0; /* Cambia el color de fondo de la página */
+    background-color: #f0f0f0;
+    margin: 200px auto;
+    padding: 50px;
 }
 
-/* Estilos para el encabezado (header) */
-header {
+/* Estilos para el header*/
+.navbar {
     position: fixed;
-    background-color: #BFB6AE;
-    width: 100%;
-}
-.container_header1 {
-    display: flex;
-    flex-direction: row;
+    top: 0;
+    background-color: rgb(229, 183, 206);
+    width: 100vw;
+    text-align: center;
+    padding: 20px;
 }
 
-.container_links-nav {
+.nav__links {
     display: flex;
-}
-.container_busqueda {
-    position: relative;
-    left: 70px;
-    top: 40px;
-    height: fit-content;
-    width:60%;
-}
-.container_busqueda input:hover {
-    width: 80%;
-}
-.container_busqueda input {
-    border-radius: 20px;
-    padding: 5px 10px;
-    border: 2px solid #e0c5c5;
-    transition: all 3s ease-in-out;
-}
-.button-enviar {
-    background-color: #e0c5c5;
-    border: #BFB6AE;
-    padding: 5px 3px;
-    border-radius: 30px;
-}
-.container_links-nav li {
-    margin: 0 10px;
+    gap: 1rem;
     list-style: none;
 }
-.container_links-nav li:hover {
-    color: #fff;
+
+.nav__links a {
+    display: inline-block;
+    text-decoration: none;
+    border-right: 2px solid #fff;
+    padding: 0 30px 0 30px;
+    color: #000000;
+}
+
+.nav__links a:hover {
+    font-weight: bold;
 }
 
 
 /* Estilos para la imagen de bienvenida */
-.bienvenida img {
-    max-width: 100%; /* La imagen se ajustará al ancho del contenedor header */
-    height: 50%; /* Mantiene la proporción de aspecto original */
-    display: block; /* Utiliza todo el ancho de la pagina*/
-    margin: 0 auto; /* Centra la imagen horizontalmente */ 
-}
 
 
 /* Estilos para los productos */
-.vista-productos {
+.gallery {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex: 1;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.producto {
     text-align: center;
+    padding: 10px;
 }
-.vista__productos-container {
-    flex: 1;
-}
-
-.vista__productos-container h3 {
-    font-size: 20px;
-    margin: 10px 0;
+.producto p {
+    margin: 10px auto;
 }
 
-.vista__productos-container-img img{
-    max-width: 100%;
-    height: auto;
+.gallery__box-img {
+    width: 300px;
+    height: 400px;
 }
-.vista__productos-container-img :hover{
-    max-width: 110%;
-    object-fit: contain;
-}
-
-
-/* Estilos para la barra inferior */
-.barra-inferior {
-    background-color: #e0c5c5;
-    color: #fff;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.barra-inferior-item {
-    flex: 1;
-    text-align: center;
-}
-
-/* Estilos para el ícono de la barra inferior */
-.fa {
-    font-size: 24px;
-    margin-bottom: 10px;
+.gallery__box-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* se ajusta al contenido*/
 }
 
 /* Estilos para el pie de página (footer) */
 footer {
+    position: relative;
+    bottom: 0;
     background-color: #e0c5c5;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
 }
+
 
 .list-nav {
     list-style: none;
@@ -123,17 +94,12 @@ footer {
     text-decoration: none;
     color: darkred;
     font-size: 1em;
-    margin: 10px;
 }
 
 .list-nav li {
     display: flex;
-    margin-bottom: 10px;
     flex-direction: column;
 }
-
-
-
 
 
 /* Pagina contactanos*/
@@ -146,6 +112,7 @@ fieldset {
     font-size: 1em;
     padding: 20px;
 }
+
 fieldset legend {
     text-align: center;
     font-size: 30px;
@@ -157,3 +124,52 @@ fieldset legend {
 /*
     border: 5px solid rebeccapurple;
     */
+
+
+/*REMERAS*/
+
+
+/*PAGINA FRECUENTES*/
+
+.main__frecuentes {
+    margin: 130px auto;
+    width: 90%;
+}
+
+.main__frecuentes-h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.main__frecuentes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 20px auto;
+}
+
+/*PAGINA TALLES */
+
+.main__talles {
+    margin: 130px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main__talles img {
+    margin: 100px auto;
+}
+
+.main__talles h2 {
+    font-size: 1.5em;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.main__talles h4 {
+    font-size: 1.1rem;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
