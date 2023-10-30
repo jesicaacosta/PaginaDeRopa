@@ -53,25 +53,33 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
+    width: 90%;
+    border: 2px solid rebeccapurple;
 }
 
 .producto {
     text-align: center;
     padding: 10px;
+    width: 90%;
+    border: 2px solid rgb(188, 146, 230);
 }
 .producto p {
     margin: 10px auto;
+    font-size: 1em;
+    border: 2px solid rgb(68, 153, 51);
 }
 
 .gallery__box-img {
     width: 300px;
     height: 400px;
+    max-width: fit-content;
+    border: 2px solid rgb(153, 51, 65);
 }
 .gallery__box-img img {
     height: 100%;
     width: 100%;
     object-fit: cover; /* se ajusta al contenido*/
+    border: 2px solid rgb(153, 138, 51);
 }
 
 /* Estilos para el pie de página (footer) */
