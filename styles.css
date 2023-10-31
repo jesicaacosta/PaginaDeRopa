@@ -11,17 +11,13 @@ hr {
 body {
     background-color: #f0f0f0;
 }
-main {
-    font-family: 'Raleway', sans-serif;
-    background-color: #f0f0f0;
-    margin: 200px auto;
-    padding: 50px;
-}
+
 
 /* Estilos para el header*/
 .navbar {
     position: fixed;
     top: 0;
+    z-index: 500;
     background-color: #e5b7ce;
     width: 100vw;
     text-align: center;
@@ -213,7 +209,7 @@ footer {
     width: 90%;
 }
 
-.main__frecuentes-h1 {
+h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
@@ -250,3 +246,30 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
+
+/* PRODUCTOS */
+
+.main__productos {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    padding: 5px;
+}
+
+
+.aside__productos {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    background-color: #e5b7ce;
+    height: 100vh;
+    padding: 0 20px;
+}
+.aside__productos-input {
+}
+
+
+.grid__container{
+}
+
+/* Practicas*/
