@@ -5,10 +5,12 @@
 
 hr {
     border: 1px solid #fff;
-    margin: 5px auto;
 }
 
 /* Estilos generales */
+body {
+    background-color: #f0f0f0;
+}
 main {
     font-family: 'Raleway', sans-serif;
     background-color: #f0f0f0;
@@ -20,7 +22,7 @@ main {
 .navbar {
     position: fixed;
     top: 0;
-    background-color: rgb(229, 183, 206);
+    background-color: #e5b7ce;
     width: 100vw;
     text-align: center;
     padding: 20px;
@@ -28,8 +30,9 @@ main {
 
 .nav__links {
     display: flex;
-    gap: 1rem;
     list-style: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__links a {
@@ -43,7 +46,6 @@ main {
 .nav__links a:hover {
     font-weight: bold;
 }
-
 
 /* Estilos para la imagen de bienvenida */
 
@@ -116,7 +118,6 @@ footer {
 
 .list-nav li {
     margin: 25px auto;
-    font-size: 1.2em;
 }
 
 .list-nav li:hover {
@@ -134,29 +135,75 @@ footer {
     font-size: 1.2em;
     text-align: center;
     justify-content: center;
-    padding: 30px;
 }
 
 /* Pagina contactanos*/
 .form__mail {
-    margin: 70px;
-    width: 70vh;
+    width: 100%;
+}
+.form__mail h3 {
+    font-size: 1.2em;
+    color: #790560;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+.form__button {
+	box-shadow:inset 0px 1px 3px 0px #f2fadc;
+	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+	background-color:#dbe6c4;
+	border-radius:5px;
+	border:1px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #ced9bf;
+}
+.form__button:hover {
+	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+	background-color:#9ba892;
+}
+.form__button:active {
+	position:relative;
+	top:1px;
+}
+.form__mail input {
+    background-color: #e5b7ce;
+    border: none;
+}
+.form__mail input:focus {
+    width: 30%;
+    background-color: #e0c5c5;
+    border: none;
+}
+.ubicacion {
+    margin: 20px 0; 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.ubicacion fieldset {
+    width: 100%;
+    margin: 40px 0;
+}
+.ubicacion fieldset iframe {
+    width: 100%;
+    padding: 10px;
 }
 
-fieldset {
-    font-size: 1em;
-    padding: 20px;
-}
-
-fieldset legend {
-    text-align: center;
-    font-size: 30px;
+.ubicacion h1, fieldset legend {
+    font-size: 1.2em;
+    color: #790560;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
-
-/*REMERAS*/
+/*Pagina productos*/
 
 
 /*PAGINA FRECUENTES*/
