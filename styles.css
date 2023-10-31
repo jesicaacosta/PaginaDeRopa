@@ -10,7 +10,7 @@ hr {
 
 /* Estilos generales */
 main {
-    font-family: 'Raleway', sans-serif;   
+    font-family: 'Raleway', sans-serif;
     background-color: #f0f0f0;
     margin: 200px auto;
     padding: 50px;
@@ -63,28 +63,35 @@ main {
     text-align: center;
     padding: 10px;
     min-width: 30%;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
 }
+
 .producto p {
     margin: 10px auto;
     font-size: 1em;
 }
-.producto p:first-of-type { /*el primer elem tipo p*/
+
+.producto p:first-of-type {
+    /*el primer elem tipo p*/
     font-weight: 600;
     font-size: 1.1em;
+    color: #790560;
 }
-
 
 .gallery__box-img {
     width: 300px;
     height: 400px;
     max-width: fit-content;
 }
+
 .gallery__box-img img {
     height: 100%;
     width: 100%;
-    object-fit: cover; /* se ajusta al contenido*/
+    object-fit: cover;
+    /* se ajusta al contenido*/
 }
 
 /* Estilos para el pie de página (footer) */
@@ -92,28 +99,43 @@ footer {
     position: relative;
     bottom: 0;
     background-color: #e0c5c5;
-    text-align: center;
-    padding: 10px 0;
     width: 100%;
+    height: 30vh;
 }
-
 
 .list-nav {
     list-style: none;
-    padding: 0;
+    text-align: center;
 }
 
 .list-nav li a {
     text-decoration: none;
-    color: darkred;
+    color: #790560;
     font-size: 1em;
 }
 
 .list-nav li {
-    display: flex;
-    flex-direction: column;
+    margin: 25px auto;
+    font-size: 1.2em;
 }
 
+.list-nav li:hover {
+    font-weight: bold;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer___frase {
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
 
 /* Pagina contactanos*/
 .form__mail {
@@ -132,11 +154,6 @@ fieldset legend {
 }
 
 
-
-
-/*
-    border: 5px solid rebeccapurple;
-    */
 
 
 /*REMERAS*/
