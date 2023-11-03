@@ -7,17 +7,29 @@ hr {
     border: 1px solid #fff;
 }
 
-/* Estilos generales */
+/* Estilos Pantalla Grandes */
+
 body {
     background-color: #f0f0f0;
 }
 
 
 /* Estilos para el header*/
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    background-color: #e5b7ce;
+    width: 100%;
+}
+
+.navbar__responsive {
+    display: none;
+}
 .navbar {
     position: fixed;
-    top: 0;
-    z-index: 500;
+    top: 70px;
+    z-index: 200;
     background-color: #e5b7ce;
     width: 100vw;
     text-align: center;
@@ -37,11 +49,66 @@ body {
     border-right: 2px solid #fff;
     padding: 0 30px 0 30px;
     color: #000000;
+    width: 200px;
 }
 
 .nav__links a:hover {
     font-weight: bold;
+    background-color: #fff;
 }
+
+
+
+/* Estilos Mobile */
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+    .navbar__responsive {
+        display:block; 
+        position: relative;
+        top: 80px;
+    }
+    .nav__responsive__links {
+        padding: 70px 1px 1px  10px;
+        background-color: #fff;
+        width: 70%;
+        list-style: none;
+        text-align: left;
+    }
+    .nav__responsive__links a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000000;
+        margin: 5px 0;   
+        font-size: 1.2em; 
+    }
+
+.fa-bars {
+    color: #790560;
+    display: block;
+    font-size: 1.5em;
+}
+
+.navbar__responsive__bars{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.navbar__responsive__links i {
+    color: #e5b7ce;
+     margin-right: 2px;
+     text-align: left;
+     font-size: 1em;
+   
+}
+
+.navbar__responsive__bars:hover {
+    
+}
+
 
 /* Estilos para la imagen de bienvenida */
 
@@ -98,9 +165,13 @@ footer {
     bottom: 0;
     background-color: #e0c5c5;
     width: 100%;
-    height: 30vh;
+    height: 25vh;
+    margin: 0;
 }
-
+.footer__cont {
+    padding: 10px;
+    height: 100%;
+}
 .list-nav {
     list-style: none;
     text-align: center;
