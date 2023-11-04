@@ -26,6 +26,7 @@ header {
 .navbar__responsive {
     display: none;
 }
+
 .navbar {
     position: fixed;
     top: 70px;
@@ -65,282 +66,306 @@ header {
     .navbar {
         display: none;
     }
+
     .navbar__responsive {
-        display:block; 
-        position: relative;
-        top: 80px;
+        display: block;
+        margin-top: 100px;
     }
-    .nav__responsive__links {
-        padding: 70px 1px 1px  10px;
+
+    .fa-bars {
+        color: #790560;
+        font-size: 1.7em;
+        margin: 5px;
+        float: right;
+    }
+
+    .navbar__responsive__bars {
+        display: inline;
         background-color: #fff;
-        width: 70%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar__responsive__links i {
+        color: #e5b7ce;
+        text-align: left;
+        font-size: 1em;
+        width: 25px;
+        text-align: center;
+    }
+
+    .nav__responsive__links {
+        background-color: #fff;
+        width: 60%;
         list-style: none;
         text-align: left;
+        position: absolute;
+        top: -1000px;
+        height: 100%;
+        border-right: 15px solid #e5b7ce;
+        transition: all 1.5s;
+
     }
+
     .nav__responsive__links a {
         display: inline-block;
         text-decoration: none;
         color: #000000;
-        margin: 5px 0;   
+        margin: 25px 0;
         font-size: 1.2em; 
     }
 
-.fa-bars {
-    color: #790560;
-    display: block;
-    font-size: 1.5em;
-}
+    .nav__responsive__links a:hover {
+        font-weight: bold;
+    }
 
-.navbar__responsive__bars{
-    position: absolute;
-    top: 30px;
-    left: 10px;
-}
-
-.navbar__responsive__links i {
-    color: #e5b7ce;
-     margin-right: 2px;
-     text-align: left;
-     font-size: 1em;
-   
-}
-
-.navbar__responsive__bars:hover {
-    
-}
+    .navbar__responsive__bars:hover  + .nav__responsive__links {
+        top: 105px;
+    }
 
 
-/* Estilos para la imagen de bienvenida */
+    /* Estilos para la imagen de bienvenida */
 
 
-/* Estilos para los productos */
-.gallery {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-}
+    /* Estilos para los productos */
+    .gallery {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
-.producto {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 10px;
-    min-width: 30%;
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-}
+    .producto {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+        min-width: 30%;
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+    }
 
-.producto p {
-    margin: 10px auto;
-    font-size: 1em;
-}
+    .producto p {
+        margin: 10px auto;
+        font-size: 1em;
+    }
 
-.producto p:first-of-type {
-    /*el primer elem tipo p*/
-    font-weight: 600;
-    font-size: 1.1em;
-    color: #790560;
-}
+    .producto p:first-of-type {
+        /*el primer elem tipo p*/
+        font-weight: 600;
+        font-size: 1.1em;
+        color: #790560;
+    }
 
-.gallery__box-img {
-    width: 300px;
-    height: 400px;
-    max-width: fit-content;
-}
+    .gallery__box-img {
+        width: 300px;
+        height: 400px;
+        max-width: fit-content;
+    }
 
-.gallery__box-img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* se ajusta al contenido*/
-}
+    .gallery__box-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        /* se ajusta al contenido*/
+    }
 
-/* Estilos para el pie de página (footer) */
-footer {
-    position: relative;
-    bottom: 0;
-    background-color: #e0c5c5;
-    width: 100%;
-    height: 25vh;
-    margin: 0;
-}
-.footer__cont {
-    padding: 10px;
-    height: 100%;
-}
-.list-nav {
-    list-style: none;
-    text-align: center;
-}
+    /* Estilos para el pie de página (footer) */
+    footer {
+        position: relative;
+        bottom: 0;
+        background-color: #e0c5c5;
+        width: 100%;
+        height: 25vh;
+        margin: 0;
+    }
 
-.list-nav li a {
-    text-decoration: none;
-    color: #790560;
-    font-size: 1em;
-}
+    .footer__cont {
+        padding: 10px;
+        height: 100%;
+    }
 
-.list-nav li {
-    margin: 25px auto;
-}
+    .list-nav {
+        list-style: none;
+        text-align: center;
+    }
 
-.list-nav li:hover {
-    font-weight: bold;
-}
+    .list-nav li a {
+        text-decoration: none;
+        color: #790560;
+        font-size: 1em;
+    }
 
-.footer__links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+    .list-nav li {
+        margin: 25px auto;
+    }
 
-.footer___frase {
-    font-size: 1.2em;
-    text-align: center;
-    justify-content: center;
-}
+    .list-nav li:hover {
+        font-weight: bold;
+    }
 
-/* Pagina contactanos*/
-.form__mail {
-    width: 100%;
-}
-.form__mail h3 {
-    font-size: 1.2em;
-    color: #790560;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-}
-.form__button {
-	box-shadow:inset 0px 1px 3px 0px #f2fadc;
-	background:linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
-	background-color:#dbe6c4;
-	border-radius:5px;
-	border:1px solid #b2b8ad;
-	display:inline-block;
-	cursor:pointer;
-	color:#757d6f;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #ced9bf;
-}
-.form__button:hover {
-	background:linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
-	background-color:#9ba892;
-}
-.form__button:active {
-	position:relative;
-	top:1px;
-}
-.form__mail input {
-    background-color: #e5b7ce;
-    border: none;
-}
-.form__mail input:focus {
-    width: 30%;
-    background-color: #e0c5c5;
-    border: none;
-}
-.ubicacion {
-    margin: 20px 0; 
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.ubicacion fieldset {
-    width: 100%;
-    margin: 40px 0;
-}
-.ubicacion fieldset iframe {
-    width: 100%;
-    padding: 10px;
-}
+    .footer__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-.ubicacion h1, fieldset legend {
-    font-size: 1.2em;
-    color: #790560;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .footer___frase {
+        font-size: 1.2em;
+        text-align: center;
+        justify-content: center;
+    }
 
+    /* Pagina contactanos*/
+    .form__mail {
+        width: 100%;
+    }
 
-/*Pagina productos*/
+    .form__mail h3 {
+        font-size: 1.2em;
+        color: #790560;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+    }
 
+    .form__button {
+        box-shadow: inset 0px 1px 3px 0px #f2fadc;
+        background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+        background-color: #dbe6c4;
+        border-radius: 5px;
+        border: 1px solid #b2b8ad;
+        display: inline-block;
+        cursor: pointer;
+        color: #757d6f;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 11px 23px;
+        text-decoration: none;
+        text-shadow: 0px -1px 0px #ced9bf;
+    }
 
-/*PAGINA FRECUENTES*/
+    .form__button:hover {
+        background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+        background-color: #9ba892;
+    }
 
-.main__frecuentes {
-    margin: 130px auto;
-    width: 90%;
-}
+    .form__button:active {
+        position: relative;
+        top: 1px;
+    }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
+    .form__mail input {
+        background-color: #e5b7ce;
+        border: none;
+    }
 
-.main__frecuentes p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 100;
-    margin: 20px auto;
-}
+    .form__mail input:focus {
+        width: 30%;
+        background-color: #e0c5c5;
+        border: none;
+    }
 
-/*PAGINA TALLES */
+    .ubicacion {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
 
-.main__talles {
-    margin: 130px 100px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+    .ubicacion fieldset {
+        width: 100%;
+        margin: 40px 0;
+    }
 
-.main__talles img {
-    margin: 100px auto;
-}
+    .ubicacion fieldset iframe {
+        width: 100%;
+        padding: 10px;
+    }
 
-.main__talles h2 {
-    font-size: 1.5em;
-    margin: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.main__talles h4 {
-    font-size: 1.1rem;
-    margin: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-/* PRODUCTOS */
-
-.main__productos {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100vw;
-    padding: 5px;
-}
+    .ubicacion h1,
+    fieldset legend {
+        font-size: 1.2em;
+        color: #790560;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
 
-.aside__productos {
-    position: fixed;
-    left: 0;
-    top: 10%;
-    background-color: #e5b7ce;
-    height: 100vh;
-    padding: 0 20px;
-}
-.aside__productos-input {
-}
+    /*Pagina productos*/
 
 
-.grid__container{
-}
+    /*PAGINA FRECUENTES*/
 
-/* Practicas*/
+    .main__frecuentes {
+        margin: 130px auto;
+        width: 90%;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .main__frecuentes p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 100;
+        margin: 20px auto;
+    }
+
+    /*PAGINA TALLES */
+
+    .main__talles {
+        margin: 130px 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main__talles img {
+        margin: 100px auto;
+    }
+
+    .main__talles h2 {
+        font-size: 1.5em;
+        margin: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    .main__talles h4 {
+        font-size: 1.1rem;
+        margin: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+    }
+
+    /* PRODUCTOS */
+
+    .main__productos {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100vw;
+        padding: 5px;
+    }
+
+
+    .aside__productos {
+        position: fixed;
+        left: 0;
+        top: 10%;
+        background-color: #e5b7ce;
+        height: 100vh;
+        padding: 0 20px;
+    }
+
+    .aside__productos-input {}
+
+
+    .grid__container {}
+
+    /* Practicas*/
