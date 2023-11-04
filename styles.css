@@ -49,12 +49,12 @@ header {
     padding: 0 30px 0 30px;
     color: #000000;
     width: 200px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .nav__links a:hover {
     font-weight: bold;
-    background-color: #fff;
+    color: #790560;
 }
 
 .nav__pc__links i {
@@ -118,7 +118,7 @@ header {
         font-size: 1.2em; 
     }
 
-    .nav__responsive__links a:hover {
+    .list-nav--links:hover {
         font-weight: bold;
     }
 
@@ -129,36 +129,35 @@ header {
     }
 
 }
-    
-
 
     /* Estilos para la imagen de bienvenida */
 
-
     /* Estilos para los productos */
     .gallery {
+        position: relative;
+        top: 150px;
         display: grid;
-        flex-wrap: wrap;
         width: 100%;
-        grid-template-columns: (1fr, 6) ;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        padding: 20px;
+        margin-bottom: 200px;
     }
 
     .producto {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        text-align: center;
         padding: 10px;
         min-width: 30%;
         justify-content: center;
-        /* Centra horizontalmente */
-        align-items: center;
-        /* Centra verticalmente */
+        align-items: center; 
+        border: 2px solid floralwhite;
     }
 
     .producto p {
         margin: 10px auto;
         font-size: 1em;
+        text-align: center;
     }
 
     .producto p:first-of-type {
@@ -172,6 +171,7 @@ header {
         width: 300px;
         height: 400px;
         max-width: fit-content;
+        justify-content: center;
     }
 
     .gallery__box-img img {
