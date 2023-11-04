@@ -119,9 +119,18 @@ header {
         font-weight: bold;
     }
 
-    .navbar__responsive__bars:hover  + .nav__responsive__links {
+    /*.navbar__responsive__bars:hover  + .nav__responsive__links {
         top: 105px;
+        width: 100%;
+    }*/
+
+
+    .navbar__responsive:hover .nav__responsive__links {
+        top: 105px;
+        width: 90%;
     }
+
+    
 
 
     /* Estilos para la imagen de bienvenida */
