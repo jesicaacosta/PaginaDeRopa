@@ -3,22 +3,16 @@
     box-sizing: border-box;
 }
 
-hr {
-    border: 1px solid #fff;
-}
-
 /* Estilos Pantalla Grandes */
-
 body {
     background-color: #f0f0f0;
 }
 
-
-/* Estilos para el header*/
+/* Estilos para el header */
 header {
     position: fixed;
     z-index: 100;
-    top: 0px;
+    top: 0;
     background-color: #e5b7ce;
     width: 100%;
 }
@@ -52,7 +46,7 @@ header {
     font-size: 1.2em;
 }
 
-.nav__links a:hover {
+.nav__pc__links a:hover {
     font-weight: bold;
     color: #790560;
 }
@@ -63,248 +57,161 @@ header {
 
 
 
-/* Estilos Mobile */
+/* Estilos para la imagen de bienvenida */
 
-@media  (max-width: 600px) {
-    .navbar {
-        display: none;
-    }
+/* Estilos para la galería de productos */
 
-    .navbar__responsive {
-        display: block;
-        margin-top: 100px;
-    }
-
-    .fa-bars {
-        color: #790560;
-        font-size: 1.7em;
-        margin: 5px;
-        float: right;
-    }
-
-    .navbar__responsive__bars {
-        display: inline;
-        background-color: #fff;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .navbar__responsive__links i {
-        color: #e5b7ce;
-        text-align: left;
-        font-size: 1em;
-        width: 25px;
-        text-align: center;
-    }
-
-    .nav__responsive__links {
-        background-color: #fff;
-        width: 60%;
-        list-style: none;
-        text-align: left;
-        position: absolute;
-        top: -1000px;
-        height: 100%;
-        border-right: 15px solid #e5b7ce;
-        transition: all 1.5s;
-
-    }
-
-    .nav__responsive__links a {
-        display: inline-block;
-        text-decoration: none;
-        color: #000000;
-        margin: 25px 0;
-        font-size: 1.2em; 
-    }
-
-    .list-nav--links:hover {
-        font-weight: bold;
-    }
-
-
-    .navbar__responsive:hover .nav__responsive__links {
-        top: 105px;
-        width: 90%;
-    }
-
+.gallery {
+    margin-top: 200px;
 }
 
-    /* Estilos para la imagen de bienvenida */
+.card {
+    width: 100%;
+    border: 1px solid #e5b7ce;
+    margin-bottom: 20px;
+    padding: 20px;
+}
 
-    /* Estilos para los productos */
-    .gallery {
-        position: relative;
-        top: 150px;
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: space-evenly;
-        padding: 20px;
-        margin-bottom: 200px;
-    }
+.card img {
+    width: 100%;
+    height: auto;
+}
 
-    .producto {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        min-width: 30%;
-        justify-content: center;
-        align-items: center; 
-        border: 2px solid floralwhite;
-    }
+.card-body {
+    text-align: center;
+}
 
-    .producto p {
-        margin: 10px auto;
-        font-size: 1em;
-        text-align: center;
-    }
 
-    .producto p:first-of-type {
-        /*el primer elem tipo p*/
-        font-weight: 600;
-        font-size: 1.1em;
-        color: #790560;
-    }
 
-    .gallery__box-img {
-        width: 300px;
-        height: 400px;
-        max-width: fit-content;
-        justify-content: center;
-    }
+/* Estilos específicos para el footer */
 
-    .gallery__box-img img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        /* se ajusta al contenido*/
-    }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
 
-    /* Estilos para el pie de página (footer) */
-    footer {
-        position: relative;
-        bottom: 0;
-        background-color: #e0c5c5;
-        width: 100%;
-    }
+.footer__cont {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .footer__cont {
-        padding: 5px;
-        height: 100%;
+.footer__links,
+.envios {
+    flex: 1;
+}
 
-    }
+.list-nav {
+    list-style: none;
+    padding: 0;
+}
 
-    .list-nav {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
+.list-nav--links,
+.footer___frase p {
+    color: #fff;
+}
 
-    }
+.list-nav--links a {
+    text-decoration: none;
+    color: #fff;
+}
 
-    .list-nav li a {
-        text-decoration: none;
-        color: #790560;
-        font-size: 1em;
+/* Estilos para la sección de Medios de Pago y Formas de Envío */
 
-    }
+.footer__cont > div {
+    text-align: center;
+}
 
-    .list-nav li {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
+.footer__cont h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
 
-    }
+.footer__cont img {
+    margin: 5px;
+    width: 50px;
+    height: auto;
+}
 
-    .list-nav li:hover {
-        font-weight: bold;
-    }
 
-    .footer__links {
-        display: flex;
-        flex-direction: row;
-    }
 
-    .footer___frase {
-        font-size: 1em;
-        text-align: center;
-    }
 
-    /* Pagina contactanos*/
-    .form__mail {
-        width: 100%;
-    }
+/* Pagina contactanos */
+.form__mail {
+    width: 100%;
+}
 
-    .form__mail h3 {
-        font-size: 1.2em;
-        color: #790560;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 100;
-    }
+.form__mail h3 {
+    font-size: 1.2em;
+    color: #790560;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
 
-    .form__button {
-        box-shadow: inset 0px 1px 3px 0px #f2fadc;
-        background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
-        background-color: #dbe6c4;
-        border-radius: 5px;
-        border: 1px solid #b2b8ad;
-        display: inline-block;
-        cursor: pointer;
-        color: #757d6f;
-        font-family: Arial;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 11px 23px;
-        text-decoration: none;
-        text-shadow: 0px -1px 0px #ced9bf;
-    }
+.form__button {
+    box-shadow: inset 0px 1px 3px 0px #f2fadc;
+    background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    background-color: #dbe6c4;
+    border-radius: 5px;
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #757d6f;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px 23px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #ced9bf;
+}
 
-    .form__button:hover {
-        background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
-        background-color: #9ba892;
-    }
+.form__button:hover {
+    background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+    background-color: #9ba892;
+}
 
-    .form__button:active {
-        position: relative;
-        top: 1px;
-    }
+.form__button:active {
+    position: relative;
+    top: 1px;
+}
 
-    .form__mail input {
-        background-color: #e5b7ce;
-        border: none;
-    }
+.form__mail input {
+    background-color: #e5b7ce;
+    border: none;
+}
 
-    .form__mail input:focus {
-        width: 30%;
-        background-color: #e0c5c5;
-        border: none;
-    }
+.form__mail input:focus {
+    width: 30%;
+    background-color: #e0c5c5;
+    border: none;
+}
 
-    .ubicacion {
-        margin: 20px 0;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
+.ubicacion {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
 
-    .ubicacion fieldset {
-        width: 100%;
-        margin: 40px 0;
-    }
+.ubicacion fieldset {
+    width: 100%;
+    margin: 40px 0;
+}
 
-    .ubicacion fieldset iframe {
-        width: 100%;
-        padding: 10px;
-    }
+.ubicacion fieldset iframe {
+    width: 100%;
+    padding: 10px;
+}
 
-    .ubicacion h1,
-    fieldset legend {
-        font-size: 1.2em;
-        color: #790560;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+.ubicacion h1,
+fieldset legend {
+    font-size: 1.2em;
+    color: #790560;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    
 
 
     /*Pagina productos*/
@@ -380,3 +287,39 @@ header {
     .grid__container {}
 
     /* Practicas*/
+
+
+
+    /* Estilos Mobile */
+@media (max-width: 800) {
+    .navbar {
+        display: none;
+    }
+    .navbar__responsive {
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    footer {
+        padding: 50px ;
+    }
+
+    .footer__cont {
+        flex-direction: column;
+    }
+
+    .footer__links,
+    .envios {
+        margin-bottom: 20px;
+    }
+
+    .list-nav,
+    .list-nav li {
+        text-align: center;
+    }
+
+    .footer__cont > div {
+        margin-bottom: 20px;
+    }
+}

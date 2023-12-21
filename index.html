@@ -4,136 +4,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>timeless ind</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contactanos.html">
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600;900&display=swap" rel="stylesheet">
+    <title>Timeless indumentaria </title>
 
+    <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Código CSS  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 </head>
 
 <body>
     <header>
         <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
     </header>
+
     <nav class="navbar">
         <ul class="nav__links">
-            <li class="nav__pc__links"> <a href="index.html">             
-                <i class="fas fa-home"></i>Inicio </a></li>
-            <li class="nav__pc__links"><a href="rem.html">            
-                <i class="fas fa-bars"></i>Productos</a></li>
-            <li class="nav__pc__links"><a href="#">
-                <i class="fas fa-city"></i>Locales</a></li>
-            <li class="nav__pc__links"><a href="contactanos.html">             
-                <i class="fas fa-address-book"></i> Contacto</a></li>
+            <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="nav__pc__links"><a href="rem.html"><i class="fas fa-bars"></i> Productos</a></li>
+            <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
         </ul>
     </nav>
 
     <nav class="navbar__responsive">
-        <div class="navbar__responsive__bars"> <!-- Aplicar la clase aquí -->
-            <i class="fas fa-bars"></i>
-        </div>        
+        <div class="navbar__responsive__bars"><i class="fas fa-bars"></i>
+        </div>
         <ul class="nav__responsive__links">
-            <li class="navbar__responsive__links"> <a href="index.html">             
-                <i class="fas fa-home"></i> Inicio </a></li>
-            <li class="navbar__responsive__links"><a href="rem.html">             
-                <i class="fas fa-tag"></i> Productos</a></li>
-            <li class="navbar__responsive__links"><a href="#">             
-                <i class="fas fa-city"></i> Locales</a></li>
-            <li class="navbar__responsive__links"><a href="contactanos.html">
-                    <i class="fas fa-address-book"></i> Contacto</a></li>
+            <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a></li>
+            <li class="navbar__responsive__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
+                    Contacto</a></li>
         </ul>
     </nav>
-    
 
     <main>
-
+        <!-- Imagen de bienvenida animada -->
         <div class="bienvenida">
-                <!-- <p>Bienvenida a Timeless</p> 
+            <!-- <p>Bienvenida a Timeless</p> 
         <img src="images/bienv.jpg" alt="Imagen Bienvenida"> -->
         </div>
 
-        <section class="gallery">
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/e.jpg" alt="ropa de media estación" width="300px">
+        <!-- Crea un contenedor con el id "app" que se asociará con la instancia de Vue -->
+        <div id="app">
+            <!-- Define una sección con la clase "gallery" para mostrar la galería de productos -->
+            <section class="gallery">
+                <div class="container">
+                    <!-- Utiliza Vue.js para iterar sobre la lista de productos -->
+                    <div class="row">
+                        <div v-for="(producto, index) in productos" :key="index" class="col-lg-4 col-md-12 mb-4">
+                            <!-- Card de Bootstrap -->
+                            <div class="card">
+                                <!-- Imagen del producto -->
+                                <img :src="producto.imagen" :alt="producto.descripcion" class="card-img-top"
+                                    width="300px">
+                                <!-- Cuerpo de la tarjeta con información dinámica del producto -->
+                                <div class="card-body">
+                                    <!-- Nombre del país del producto -->
+                                    <p class="card-text">{{ producto.pais }}</p>
+                                    <!-- Precio del producto -->
+                                    <p class="card-text">Precio: {{ producto.precio }}</p>
+                                    <!-- Información sobre las cuotas -->
+                                    <p class="card-text">{{ producto.cuotas }}</p>
+                                </div>
+                            </div>
+                            <!-- Fin de la Card de Bootstrap -->
+                        </div>
+                    </div>
                 </div>
-                <p>España</p>
-                <p>Precio: $14,500</p>
-                <p>12 cuotas sin interés de $1,208.33</p>
-            </div>
+            </section>
+        </div>
 
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/a.jpg" alt="remeras de mujer"  width="300px" class="gallery__img">
-                </div>
-                <p>Uruguay</p>
-                <P>$13.000</P>
-                <p>12 cuotas sin interés de $1.750</p>
-            </div>
 
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/Pantalones/pexels-being-momentx-9390325.jpg"   width="300px" alt="sweaters de temporada"
-                        class="gallery__img">
-                </div>
-                <p>Italia</p>
-                <p>Precio: $12,800</p>
-                <p>12 cuotas sin interés de $1,066.67</p>
-            </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    productos: [
+                        {
+                            imagen: 'images/Pantalones/pexels-gustavo-henrique-9261727.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Francia',
+                            precio: '$16,200',
+                            cuotas: '12 cuotas sin interés de $1,350.00'
+                        },
+                        {
+                            imagen: 'images/Pantalones/pexels-gustavo-henrique-9261733.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Grecia',
+                            precio: '$13,750',
+                            cuotas: '12 cuotas sin interés de $1,145.83'
+                        },
+                        {
+                            imagen: 'images/Pantalones/pexels-tnarg-4940236.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Australia',
+                            precio: '$19,900',
+                            cuotas: '12 cuotas sin interés de $1,658.33'
+                        }
+                    ]
+                }
+            });
+        </script>
 
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/Pantalones/pexels-gustavo-henrique-9261727.jpg"  width="300px" alt="ropa de media estación"
-                        class="gallery__img">
-                </div>
-                <p>Francia</p>
-                <p>Precio: $16,200</p>
-                <p>12 cuotas sin interés de $1,350.00</p>
-            </div>
 
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/Pantalones/pexels-gustavo-henrique-9261733.jpg"  width="300px" alt="">
-                </div>
-                <p>Grecia</p>
-                <p>Precio: $13,750</p>
-                <p>12 cuotas sin interés de $1,145.83</p>
-            </div>
-
-            <div class="producto">
-                <div class="gallery__box-img">
-                    <img src="images/Pantalones/pexels-tnarg-4940236.jpg"  width="300px" alt="">
-                </div>
-                <p>Australia</p>
-                <p>Precio: $19,900</p>
-                <p>12 cuotas sin interés de $1,658.33</p>
-            </div>
-
-        </section>
     </main>
 
 
 
     <footer>
-        <div class="footer__cont">
-            <div class="footer__links">
-                <ul class="list-nav">
-                    <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true">
-                        </i> Hablanos por whatsapp:</a> </li>
-                    <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
-                    <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
-                    <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a></li>
-                    <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
-                </ul>
-            </div>
+        <div>
 
-            <div class="footer___frase">
+
+            <!-- Footer -->
+            <div class="footer__cont">
+
+                <div class="footer__links">
+                    <!-- Redes sociales -->
+                    <ul class="list-nav">
+                        <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
+                        <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
+                        <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
+                        <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a></li>
+                        <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
+                    </ul>
+
+
+                <!-- Medios de pago -->
+                <div>
+                    <h2>MEDIOS DE PAGO</h2>
+                    <img src="images/medios/visa.png" alt="visa" width="50px">
+                    <img src="images/medios/master.png" alt="visa" width="50px">
+                    <img src="images/medios/american.png" alt="visa" width="50px">
+                    <img src="images/medios/diner.png" alt="visa" width="50px">
+                    <img src="images/medios/banelco.png" alt="visa" width="50px">
+                    <img src="images/medios/cabal.png" alt="visa" width="50px">
+                    <img src="images/medios/naranja.png" alt="visa" width="50px">
+                    <img src="images/medios/shopp.png" alt="visa" width="50px">
+                    <img src="images/medios/mp.png" alt="visa" width="50px">
+                    <img src="images/medios/arg.png" alt="visa" width="50px">
+                    <img src="images/medios/cenco.png" alt="visa" width="50px">
+                    <img src="images/medios/pago.png" alt="visa" width="50px">
+                    <img src="images/medios/rapi.png" alt="visa" width="50px">
+                </div>
+
+                <div class="envios">
+                    <h2>FORMAS DE ENVÍO</h2>
+                    <img src="images/medios/envio.png" alt="visa" width="50px">
+                    <img src="images/medios/correo.png" alt="visa" width="50px">
+                </div>
+
             </div>
-        </div>
     </footer>
+
+    <!-- Incluye el script de jQuery, que es una biblioteca de JavaScript, para facilitar la manipulación del DOM y otras operaciones -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- Incluye el script de Popper.js, una biblioteca que se utiliza junto con Bootstrap para manejar la posición de los elementos emergentes y otras interacciones -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <!-- Incluye el script de Bootstrap, que proporciona funcionalidades y estilos predefinidos para mejorar el diseño y la interactividad de la página -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
