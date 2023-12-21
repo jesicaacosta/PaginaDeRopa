@@ -4,49 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>timeless ind</title>
+    <title>Timeless indumentaria </title>
+
+    <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Código CSS  -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contactanos.html">
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600;900&display=swap" rel="stylesheet">
+
+    <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
+
+    
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
     </header>
+
     <nav class="navbar">
-        <img src="images/logo.png" width="200px" alt="logo">
-
         <ul class="nav__links">
-            <li class="navbar__links"> <a href="index.html">Inicio</a></li>
-            <li class="navbar__links"><a href="rem.html">Productos</a></li>
-            <li class="navbar__links"><a href="#">Locales</a></li>
-            <li class="navbar__links"><a href="contactanos.html">Contacto</a></li>
-
+            <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="nav__pc__links"><a href="rem.html"><i class="fas fa-bars"></i> Productos</a></li>
+            <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
         </ul>
     </nav>
 
+    <nav class="navbar__responsive">
+        <div class="navbar__responsive__bars"><i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav__responsive__links">
+            <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a></li>
+            <li class="navbar__responsive__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
+                    Contacto</a></li>
+        </ul>
+    </nav>
+
+    
     <main>
         <section class="form__mail">
             <form action="">
                 <fieldset>
                     <legend>Contactanos</legend>
 
-                    <label for="name">🤝Cómo te llamás? </label> <input type="text" name="first-name" id=""
-                        required> <br> <br>
+                    <label for="name">🤝Cómo te llamás? </label> <input type="text" name="first-name" id="" required>
+                    <br> <br>
                     <label for="mail">⌨Cuál es tu correo? </label> <input type="mail" name="mail" id="" required> <br>
                     <br>
-                    <label for="mail">☎ Indicanos también un celular: </label> <input type="number" name="mail" id=""
-                        required><br> <br>  <br><br>
+                    <label for="mail">☎ Indicanos también un celular: </label> <input type="number" name="mail" id="" required><br> <br> <br><br>
 
                     <h3>Motivo de tu Mensaje:</h3> <br>
-                    <input type="checkbox" name="" id="">   Hacer un reclamo🙁<br> <br>
-                    <input type="checkbox" name="" id="">   Pregunta sobre una prenda 🛠️<br><br>
-                    <input type="checkbox" name="" id="">   Consulta sobre una compra realizada 🛒 <br><br>
+                    <input type="checkbox" name="" id=""> Hacer un reclamo🙁<br> <br>
+                    <input type="checkbox" name="" id=""> Pregunta sobre una prenda 🛠️<br><br>
+                    <input type="checkbox" name="" id=""> Consulta sobre una compra realizada 🛒 <br><br>
 
-                    <label for="mensaje">   Contanos más! Ingresá tu consulta:📝 </label> <br><br>
+                    <label for="mensaje"> Contanos más! Ingresá tu consulta:📝 </label> <br><br>
                     <textarea name="" id="" cols="40" rows="10"></textarea>
                     <br> <br>
 
@@ -57,40 +75,77 @@
             </fieldset>
         </section>
 
-
         <section class="ubicacion">
             <fieldset>
                 <legend>Donde nos ubicamos? </legend>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </fieldset>
-
         </section>
+
     </main>
 
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
+
+
     <footer>
-        <div class="footer__links">
+        <div>
 
-            <ul class="list-nav">
-                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true">
-                        </i> Hablanos por whatsapp:</a> </li>
-                <li><a href="contactanos.html">Contactanos</a></li>
-                <li><a href="#"> Medios de pago</a></li>
-                <li><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a></li>
-            </ul>
-        </div>
 
-        <div class="footer___frase">
-            <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
-        </div>
+            <!-- Footer -->
+            <div class="footer__cont">
 
-        </div>
+                <div class="footer__links">
+                    <!-- Redes sociales -->
+                    <ul class="list-nav">
+                        <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i
+                                    class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
+                        <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
+                        <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
+                        <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a>
+                        </li>
+                        <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
+                    </ul>
+
+
+                    <!-- Medios de pago -->
+                    <div>
+                        <h2>MEDIOS DE PAGO</h2>
+                        <img src="images/medios/visa.png" alt="visa" width="50px">
+                        <img src="images/medios/master.png" alt="visa" width="50px">
+                        <img src="images/medios/american.png" alt="visa" width="50px">
+                        <img src="images/medios/diner.png" alt="visa" width="50px">
+                        <img src="images/medios/banelco.png" alt="visa" width="50px">
+                        <img src="images/medios/cabal.png" alt="visa" width="50px">
+                        <img src="images/medios/naranja.png" alt="visa" width="50px">
+                        <img src="images/medios/shopp.png" alt="visa" width="50px">
+                        <img src="images/medios/mp.png" alt="visa" width="50px">
+                        <img src="images/medios/arg.png" alt="visa" width="50px">
+                        <img src="images/medios/cenco.png" alt="visa" width="50px">
+                        <img src="images/medios/pago.png" alt="visa" width="50px">
+                        <img src="images/medios/rapi.png" alt="visa" width="50px">
+                    </div>
+
+                    <div class="envios">
+                        <h2>FORMAS DE ENVÍO</h2>
+                        <img src="images/medios/envio.png" alt="visa" width="50px">
+                        <img src="images/medios/correo.png" alt="visa" width="50px">
+                    </div>
+
+                </div>
     </footer>
+
+    <!-- Incluye el script de jQuery, que es una biblioteca de JavaScript, para facilitar la manipulación del DOM y otras operaciones -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <!-- Incluye el script de Popper.js, una biblioteca que se utiliza junto con Bootstrap para manejar la posición de los elementos emergentes y otras interacciones -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <!-- Incluye el script de Bootstrap, que proporciona funcionalidades y estilos predefinidos para mejorar el diseño y la interactividad de la página -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

@@ -86,7 +86,7 @@ header {
 /* Estilos específicos para el footer */
 
 footer {
-    background-color: #333;
+    background-color: #e0c5c5;
     color: #fff;
     padding: 20px;
 }
@@ -108,13 +108,19 @@ footer {
 
 .list-nav--links,
 .footer___frase p {
-    color: #fff;
+    color: #000000;
 }
 
 .list-nav--links a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
 }
+
+.list-nav--links a:hover {
+    color: #790560;
+    font-weight: bold;
+}
+
 
 /* Estilos para la sección de Medios de Pago y Formas de Envío */
 
@@ -139,6 +145,7 @@ footer {
 /* Pagina contactanos */
 .form__mail {
     width: 100%;
+    margin: 200px 50px;
 }
 
 .form__mail h3 {
