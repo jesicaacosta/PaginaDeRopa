@@ -4,7 +4,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 body {
@@ -48,7 +48,7 @@ header {
     padding: 0 30px 0 30px;
     color: #000000;
     width: 200px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .nav__pc__links a:hover {
@@ -156,13 +156,21 @@ footer {
     text-align: center;
 }
 
+/* Estilos personalizados para la etiqueta label */
+.form__mail label {
+    font-size: 1.5em; 
+}
+
+
 .form__mail h2 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     color: #790560;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; /* Cambia a negrita para mayor énfasis */
     margin-bottom: 20px; /* Agrega espacio inferior */
 }
+
+
 
 .form__mail h3 {
     font-size: 1.2em;
@@ -205,6 +213,7 @@ footer {
     padding: 8px; /* Agrega algún relleno a los campos de entrada */
     margin-bottom: 10px; /* Agrega espacio inferior entre campos */
     width: 60%;
+
 }
 
 .form__mail input:focus {
@@ -216,7 +225,7 @@ footer {
 /* Añade estilos para las etiquetas */
 .form__mail label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 1em;
     color: #333; /* Color de texto más oscuro para las etiquetas */
 }
@@ -246,8 +255,6 @@ fieldset legend {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-    /* En tu archivo styles.css o dentro de la etiqueta <style> en el head */
-.form__mail label,
 .form__mail textarea {
     margin-bottom: 10px;
 }
