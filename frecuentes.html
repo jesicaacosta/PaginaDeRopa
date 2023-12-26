@@ -4,29 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>timeless ind</title>
+    <title>Timeless indumentaria </title>
+
+    <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Código CSS  -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contactanos.html">
-    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600;900&display=swap" rel="stylesheet">
+
+    <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
     <header>
+        <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
     </header>
+
+    <!-- Nav Pc -->
     <nav class="navbar">
-        <img src="images/logo.png" width="200px" alt="logo">
-
         <ul class="nav__links">
-            <li class="navbar__links"> <a href="index.html">Inicio</a></li>
-            <li class="navbar__links"><a href="rem.html">Productos</a></li>
-            <li class="navbar__links"><a href="#">Locales</a></li>
-            <li class="navbar__links"><a href="contactanos.html">Contacto</a></li>
-
+            <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
+            <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
         </ul>
     </nav>
+
+        <!-- Nav Responsive -->
+    <nav class="navbar__responsive">
+        <div class="navbar__responsive__bars"><i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav__responsive__links">
+            <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a></li>
+            <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
 
     <body>
         <main class="main__frecuentes">
