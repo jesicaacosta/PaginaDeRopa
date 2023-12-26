@@ -17,7 +17,9 @@
     <!-- Awesome -->
     <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
 
-    
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -28,9 +30,21 @@
     <nav class="navbar">
         <ul class="nav__links">
             <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-            <li class="nav__pc__links"><a href="rem.html"><i class="fas fa-bars"></i> Productos</a></li>
+            <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
             <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
             <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navbar__responsive">
+        <div class="navbar__responsive__bars"><i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav__responsive__links">
+            <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+            <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-tag"></i> Productos</a></li>
+            <li class="navbar__responsive__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"> Contacto</i>
+                    Contacto</a></li>
         </ul>
     </nav>
 
@@ -46,43 +60,55 @@
         </ul>
     </nav>
 
-    
+
     <main>
+
+        
         <section class="form__mail">
-            <form action="">
-                <fieldset>
-                    <legend>Contactanos</legend>
-
-                    <label for="name">🤝Cómo te llamás? </label> <input type="text" name="first-name" id="" required>
-                    <br> <br>
-                    <label for="mail">⌨Cuál es tu correo? </label> <input type="mail" name="mail" id="" required> <br>
-                    <br>
-                    <label for="mail">☎ Indicanos también un celular: </label> <input type="number" name="mail" id="" required><br> <br> <br><br>
-
-                    <h3>Motivo de tu Mensaje:</h3> <br>
-                    <input type="checkbox" name="" id=""> Hacer un reclamo🙁<br> <br>
-                    <input type="checkbox" name="" id=""> Pregunta sobre una prenda 🛠️<br><br>
-                    <input type="checkbox" name="" id=""> Consulta sobre una compra realizada 🛒 <br><br>
-
-                    <label for="mensaje"> Contanos más! Ingresá tu consulta:📝 </label> <br><br>
-                    <textarea name="" id="" cols="40" rows="10"></textarea>
-                    <br> <br>
-
-                    <label for="Enviar"></label>
-                    <input type="submit" class="form__button" value="Enviar" id="">
-                    <input type="reset" class="form__button" value="Reset" id="">
-            </form>
+            <fieldset>
+                <legend>Contactanos</legend>
+        
+                <form action="/procesar-Formulario" method="post" id="contactForm">
+                    <label for="nombre">🤝 Como te llamas?</label>
+                    <input type="text" name="nombre" id="nombreUsuario" required>
+        
+                    <label for="mail">⌨Cuál es tu correo?</label>
+                    <input type="email" name="mail" id="mailUsuario" required>
+        
+                    <label for="celular">☎ Indicanos también un celular:</label>
+                    <input type="tel" name="numero" id="numeroUsuario" required>
+        
+                    <h3>Motivo de tu Mensaje:</h3>
+                    <input type="checkbox" name="motivo" id="reclamo" value="reclamo">
+                    <label for="reclamo">Hacer un reclamo🙁</label>
+        
+                    <input type="checkbox" name="motivo" id="pregunta" value="pregunta">
+                    <label for="pregunta">Pregunta sobre una prenda 🛠️</label>
+        
+                    <input type="checkbox" name="motivo" id="consulta" value="consulta">
+                    <label for="consulta">Consulta sobre una compra realizada 🛒</label>
+        
+                    <label for="mensaje">Contanos más! Ingresá tu consulta:📝</label>
+                    <textarea name="mensaje" id="mensaje" cols="40" rows="10"></textarea>
+        
+                    <div class="form__buttons">
+                        <input type="submit" class="form__button" value="Enviar" id="buttton_enviar">
+                        <input type="reset" class="form__button" value="Reset" id="button_reset">
+                    </div>
+                </form>
+        
             </fieldset>
         </section>
+        
 
         <section class="ubicacion">
-            <fieldset>
-                <legend>Donde nos ubicamos? </legend>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </fieldset>
+
+            <h2>Donde nos ubicamos? </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         </section>
 
     </main>
@@ -91,8 +117,6 @@
 
     <footer>
         <div>
-
-
             <!-- Footer -->
             <div class="footer__cont">
 

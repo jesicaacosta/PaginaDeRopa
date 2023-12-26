@@ -1,12 +1,15 @@
+
+/* Estilos Generales*/
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Estilos Pantalla Grandes */
 body {
     background-color: #f0f0f0;
 }
+
 
 /* Estilos para el header */
 header {
@@ -15,6 +18,7 @@ header {
     top: 0;
     background-color: #e5b7ce;
     width: 100%;
+    text-align: center;
 }
 
 .navbar__responsive {
@@ -144,8 +148,19 @@ footer {
 
 /* Pagina contactanos */
 .form__mail {
-    width: 100%;
-    margin: 200px 50px;
+    margin-top: 200px;
+    width: 70%;
+    margin: 200px auto; /* Centra el formulario en la página */
+    padding: 20px; /* Agrega algún espaciado interno */
+    text-align: center;
+}
+
+.form__mail h2 {
+    font-size: 1.8em;
+    color: #790560;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Cambia a negrita para mayor énfasis */
+    margin-bottom: 20px; /* Agrega espacio inferior */
 }
 
 .form__mail h3 {
@@ -156,7 +171,7 @@ footer {
 }
 
 .form__button {
-    box-shadow: inset 0px 1px 3px 0px #f2fadc;
+    box-shadow: 0px 1px 3px 0px #f2fadc;
     background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
     background-color: #dbe6c4;
     border-radius: 5px;
@@ -167,9 +182,10 @@ footer {
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
-    padding: 11px 23px;
+    padding: 10px 20px; /* Ajusta el espaciado del botón */
     text-decoration: none;
     text-shadow: 0px -1px 0px #ced9bf;
+    transition: background 0.3s; /* Agrega transición para un cambio suave */
 }
 
 .form__button:hover {
@@ -185,12 +201,23 @@ footer {
 .form__mail input {
     background-color: #e5b7ce;
     border: none;
+    padding: 8px; /* Agrega algún relleno a los campos de entrada */
+    margin-bottom: 10px; /* Agrega espacio inferior entre campos */
+    width: 60%;
 }
 
 .form__mail input:focus {
-    width: 30%;
+    width: 70%;
     background-color: #e0c5c5;
     border: none;
+}
+
+/* Añade estilos para las etiquetas */
+.form__mail label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333; /* Color de texto más oscuro para las etiquetas */
 }
 
 .ubicacion {
@@ -218,7 +245,12 @@ fieldset legend {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-    
+    /* En tu archivo styles.css o dentro de la etiqueta <style> en el head */
+.form__mail label,
+.form__mail textarea {
+    margin-bottom: 10px;
+}
+
 
 
     /*Pagina productos*/

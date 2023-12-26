@@ -17,7 +17,9 @@
     <!-- Awesome -->
     <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
 
-    
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
     <nav class="navbar">
         <ul class="nav__links">
             <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-            <li class="nav__pc__links"><a href="rem.html"><i class="fas fa-bars"></i> Productos</a></li>
+            <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
             <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
             <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
         </ul>
@@ -39,9 +41,9 @@
         </div>
         <ul class="nav__responsive__links">
             <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-            <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a></li>
+            <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-tag"></i> Productos</a></li>
             <li class="navbar__responsive__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
-            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
+            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"> Contacto</i>
                     Contacto</a></li>
         </ul>
     </nav>
@@ -53,7 +55,7 @@
         <img src="images/bienv.jpg" alt="Imagen Bienvenida"> -->
         </div>
 
-        <!-- Crea un contenedor con el id "app" que se asociará con la instancia de Vue -->
+        <!-- Crea un contenedor con el id "app" que se asociará con la instancia de Vue llamada app -->
         <div id="app">
             <!-- Define una sección con la clase "gallery" para mostrar la galería de productos -->
             <section class="gallery">
@@ -109,7 +111,28 @@
                             pais: 'Australia',
                             precio: '$19,900',
                             cuotas: '12 cuotas sin interés de $1,658.33'
-                        }
+                        },
+                        {
+                            imagen: 'images/1101/pexels-davide-de-giovanni-5762489.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Australia',
+                            precio: '$19,900',
+                            cuotas: '12 cuotas sin interés de $1,658.33'
+                        },
+                        {
+                            imagen: 'images/1101/pexels-dziana-hasanbekava-5480696.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Australia',
+                            precio: '$19,900',
+                            cuotas: '12 cuotas sin interés de $1,658.33'
+                        },
+                        {
+                            imagen: 'images/1101/pexels-marina-abrosimova-5929650.jpg',
+                            descripcion: 'ropa de media estación',
+                            pais: 'Australia',
+                            precio: '$19,900',
+                            cuotas: '12 cuotas sin interés de $1,658.33'
+                        },
                     ]
                 }
             });
