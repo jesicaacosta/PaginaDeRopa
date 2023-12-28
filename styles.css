@@ -347,6 +347,8 @@ fieldset legend {
         background-color: #333; /* Fondo del menú */
         padding: 10px; /* Espaciado interno */
         margin-top: 100px;
+        margin-top: 100px; /* Puedes ajustar según sea necesario */
+        width: 100%; /* Ajusta el ancho al 100% */
     }
 
     .navbar__responsive__bars {
@@ -355,19 +357,23 @@ fieldset legend {
         cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
     }
 
-    .nav__responsive__links {
-        list-style: none; /* Quita los puntos de lista */
-        padding: 0; /* Quita el espaciado interno de la lista */
-    }
-
     .navbar__responsive__links li {
         margin-bottom: 10px; /* Espaciado entre elementos de la lista */
     }
 
-    .navbar__responsive__links a {
-        text-decoration: none; /* Quita el subrayado del enlace */
-        color: #fff; /* Color del texto del enlace */
-        font-size: 1.1em; /* Tamaño del texto del enlace */
-        display: block; /* Hace que los enlaces ocupen todo el ancho del contenedor */
+    .navbar__responsive__links {
+        list-style: none;
+        padding: 0;
+        margin: 0; /* Ajusta el margen para evitar espacios innecesarios */
     }
+
+    .navbar__responsive__links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1em;
+        display: block;
+        padding: 8px 0; /* Ajusta el espaciado interno de los enlaces */
+    }
+
+    
 }
