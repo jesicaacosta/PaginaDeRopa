@@ -28,37 +28,65 @@
     </header>
 
     <!-- Nav Pc -->
-    <nav class="navbar">
-        <ul class="nav__links">
-            <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-            <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
-            <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
-            <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
-        </ul>
+    <nav>
+
+        <div class="navbar">
+            <ul class="nav__links">
+                <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
+                <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
+                <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
+                <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
         <!-- Nav Responsive -->
-    <nav class="navbar__responsive">
-        <div class="navbar__responsive__bars"><i class="fas fa-bars"></i>
+    <nav>
+
+        <div class="navbar__responsive">
+    
+                <i class="fas fa-bars"></i>
+    
+            <ul class="nav__responsive__links">
+                <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a>
+                </li>
+                <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a>
+                </li>
+                <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
+                        Contacto</a>
+                </li>
+            </ul>
+    
         </div>
-        <ul class="nav__responsive__links">
-            <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-            <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a></li
-            <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
-            <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
-        </ul>
+
     </nav>
+
+
 
 
     <main>
         <!-- Imagen de bienvenida animada -->
         <div class="bienvenida">
-         <p>Bienvenida a Timeless</p> 
-        <img src="images/bienv.jpg" alt="Imagen Bienvenida"> 
-        </div>
+            <p>Bienvenida a Timeless</p>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/carrousel/carrousel(1).jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carrousel/carrousel(2).jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/carrousel/carrousel(3).jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            
 
-        <!-- Crea un contenedor con el id "app" que se asociará con la instancia de Vue llamada app -->
-        <div id="app">
+        <!-- Crea un contenedor con el id "appVueGallery-" que se asociará con la instancia de Vue llamada appVueGallery- -->
+        <div id="appVueGallery">
             <!-- Define una sección con la clase "gallery" para mostrar la galería de productos -->
             <section class="gallery">
                 <div class="container">
@@ -90,7 +118,7 @@
 
         <script>
             new Vue({
-                el: '#app',
+                el: '#appVueGallery',
                 data: {
                     productos: [
                         {
@@ -136,8 +164,16 @@
                             cuotas: '12 cuotas sin interés de $1,658.33'
                         },
                     ]
-                }
+                },
             });
+
+
+
+
+
+
+
+
         </script>
 
 
@@ -155,39 +191,41 @@
                 <div class="footer__links">
                     <!-- Redes sociales -->
                     <ul class="list-nav">
-                        <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
+                        <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i
+                                    class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
                         <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
                         <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
-                        <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a></li>
+                        <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a>
+                        </li>
                         <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
                     </ul>
 
 
-                <!-- Medios de pago -->
-                <div>
-                    <h2>MEDIOS DE PAGO</h2>
-                    <img src="images/medios/visa.png" alt="visa" width="50px">
-                    <img src="images/medios/master.png" alt="visa" width="50px">
-                    <img src="images/medios/american.png" alt="visa" width="50px">
-                    <img src="images/medios/diner.png" alt="visa" width="50px">
-                    <img src="images/medios/banelco.png" alt="visa" width="50px">
-                    <img src="images/medios/cabal.png" alt="visa" width="50px">
-                    <img src="images/medios/naranja.png" alt="visa" width="50px">
-                    <img src="images/medios/shopp.png" alt="visa" width="50px">
-                    <img src="images/medios/mp.png" alt="visa" width="50px">
-                    <img src="images/medios/arg.png" alt="visa" width="50px">
-                    <img src="images/medios/cenco.png" alt="visa" width="50px">
-                    <img src="images/medios/pago.png" alt="visa" width="50px">
-                    <img src="images/medios/rapi.png" alt="visa" width="50px">
-                </div>
+                    <!-- Medios de pago -->
+                    <div>
+                        <h2>MEDIOS DE PAGO</h2>
+                        <img src="images/medios/visa.png" alt="visa" width="50px">
+                        <img src="images/medios/master.png" alt="visa" width="50px">
+                        <img src="images/medios/american.png" alt="visa" width="50px">
+                        <img src="images/medios/diner.png" alt="visa" width="50px">
+                        <img src="images/medios/banelco.png" alt="visa" width="50px">
+                        <img src="images/medios/cabal.png" alt="visa" width="50px">
+                        <img src="images/medios/naranja.png" alt="visa" width="50px">
+                        <img src="images/medios/shopp.png" alt="visa" width="50px">
+                        <img src="images/medios/mp.png" alt="visa" width="50px">
+                        <img src="images/medios/arg.png" alt="visa" width="50px">
+                        <img src="images/medios/cenco.png" alt="visa" width="50px">
+                        <img src="images/medios/pago.png" alt="visa" width="50px">
+                        <img src="images/medios/rapi.png" alt="visa" width="50px">
+                    </div>
 
-                <div class="envios">
-                    <h2>FORMAS DE ENVÍO</h2>
-                    <img src="images/medios/envio.png" alt="visa" width="50px">
-                    <img src="images/medios/correo.png" alt="visa" width="50px">
-                </div>
+                    <div class="envios">
+                        <h2>FORMAS DE ENVÍO</h2>
+                        <img src="images/medios/envio.png" alt="visa" width="50px">
+                        <img src="images/medios/correo.png" alt="visa" width="50px">
+                    </div>
 
-            </div>
+                </div>
     </footer>
 
     <!-- Incluye el script de jQuery, que es una biblioteca de JavaScript, para facilitar la manipulación del DOM y otras operaciones -->

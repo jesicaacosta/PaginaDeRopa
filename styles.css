@@ -1,4 +1,3 @@
-
 /* Estilos Generales*/
 
 * {
@@ -129,7 +128,7 @@ footer {
 
 /* Estilos para la sección de Medios de Pago y Formas de Envío */
 
-.footer__cont > div {
+.footer__cont>div {
     text-align: center;
 }
 
@@ -151,14 +150,16 @@ footer {
 .form__mail {
     margin-top: 200px;
     width: 70%;
-    margin: 200px auto; /* Centra el formulario en la página */
-    padding: 20px; /* Agrega algún espaciado interno */
+    margin: 200px auto;
+    /* Centra el formulario en la página */
+    padding: 20px;
+    /* Agrega algún espaciado interno */
     text-align: center;
 }
 
 /* Estilos personalizados para la etiqueta label */
 .form__mail label {
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
 
 
@@ -166,8 +167,10 @@ footer {
     font-size: 1.8rem;
     color: #790560;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; /* Cambia a negrita para mayor énfasis */
-    margin-bottom: 20px; /* Agrega espacio inferior */
+    font-weight: bold;
+    /* Cambia a negrita para mayor énfasis */
+    margin-bottom: 20px;
+    /* Agrega espacio inferior */
 }
 
 
@@ -191,10 +194,12 @@ footer {
     font-family: Arial;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 20px; /* Ajusta el espaciado del botón */
+    padding: 10px 20px;
+    /* Ajusta el espaciado del botón */
     text-decoration: none;
     text-shadow: 0px -1px 0px #ced9bf;
-    transition: background 0.3s; /* Agrega transición para un cambio suave */
+    transition: background 0.3s;
+    /* Agrega transición para un cambio suave */
 }
 
 .form__button:hover {
@@ -210,8 +215,10 @@ footer {
 .form__mail input {
     background-color: #e5b7ce;
     border: none;
-    padding: 8px; /* Agrega algún relleno a los campos de entrada */
-    margin-bottom: 10px; /* Agrega espacio inferior entre campos */
+    padding: 8px;
+    /* Agrega algún relleno a los campos de entrada */
+    margin-bottom: 10px;
+    /* Agrega espacio inferior entre campos */
     width: 60%;
 
 }
@@ -227,7 +234,8 @@ footer {
     display: block;
     margin-bottom: 10px;
     font-size: 1em;
-    color: #333; /* Color de texto más oscuro para las etiquetas */
+    color: #333;
+    /* Color de texto más oscuro para las etiquetas */
 }
 
 .ubicacion {
@@ -261,119 +269,129 @@ fieldset legend {
 
 
 
-    /*Pagina productos*/
+/*Pagina productos*/
 
 
-    /*PAGINA FRECUENTES*/
+/*PAGINA FRECUENTES*/
 
-    .main__frecuentes {
-        margin: 130px auto;
-        width: 90%;
-    }
+.main__frecuentes {
+    margin: 130px auto;
+    width: 90%;
+}
 
-    h1 {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-    }
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
-    .main__frecuentes p {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 100;
-        margin: 20px auto;
-    }
+.main__frecuentes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    margin: 20px auto;
+}
 
-    /*PAGINA TALLES */
+/*PAGINA TALLES */
 
-    .main__talles {
-        margin: 130px 100px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+.main__talles {
+    margin: 130px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
-    .main__talles img {
-        margin: 100px auto;
-    }
+.main__talles img {
+    margin: 100px auto;
+}
 
-    .main__talles h2 {
-        font-size: 1.5em;
-        margin: 30px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-    }
+.main__talles h2 {
+    font-size: 1.5em;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
-    .main__talles h4 {
-        font-size: 1.1rem;
-        margin: 30px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-    }
+.main__talles h4 {
+    font-size: 1.1rem;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 
-    /* PRODUCTOS */
+/* PRODUCTOS */
 
-    .main__productos {
-        display: flex;
-        flex-direction: row-reverse;
-        width: 100vw;
-        padding: 5px;
-    }
-
-
-    .aside__productos {
-        position: fixed;
-        left: 0;
-        top: 10%;
-        background-color: #e5b7ce;
-        height: 100vh;
-        padding: 0 20px;
-    }
-
-    .aside__productos-input {}
+.main__productos {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    padding: 5px;
+}
 
 
-    .grid__container {}
+.aside__productos {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    background-color: #e5b7ce;
+    height: 100vh;
+    padding: 0 20px;
+}
 
-    /* Practicas*/
+.aside__productos-input {}
 
 
+.grid__container {}
 
-/* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 768px) */
+
+/* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 1200) */
+
 @media only screen and (max-width: 1200px) {
-    .navbar{ 
+    .navbar {
         display: none;
     }
+
     .navbar__responsive {
-        display: block; /* Muestra el menú responsive en dispositivos móviles */
-        background-color: #333; /* Fondo del menú */
-        padding: 10px; /* Espaciado interno */
-        margin-top: 100px;
-        margin-top: 100px; /* Puedes ajustar según sea necesario */
-        width: 100%; /* Ajusta el ancho al 100% */
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        background-color: #e5b7ce;
+        padding: 5px;
+        margin-top: 90px;
+        width: 100vw;
+        padding: 15px;
+        z-index: 500;
     }
 
-    .navbar__responsive__bars {
-        color: #fff; /* Color del icono de barras */
-        font-size: 1.2em; /* Tamaño del icono de barras */
-        cursor: pointer; /* Cambia el cursor al pasar sobre el icono */
+    .navbar__responsive__links {
+        display: none;
+        /* Inicialmente oculto */
+    }
+
+    .navbar__responsive i {
+        z-index: 300;
+        position: fixed;
+        color: #1f1f1f;
+        font-size: 1.5em;
     }
 
     .navbar__responsive__links li {
-        margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+        margin-bottom: 5px;
+        /* Espaciado entre elementos de la lista */
     }
 
     .navbar__responsive__links {
         list-style: none;
         padding: 0;
-        margin: 0; /* Ajusta el margen para evitar espacios innecesarios */
+        margin: 0;
+        /* Ajusta el margen para evitar espacios innecesarios */
     }
 
     .navbar__responsive__links a {
         text-decoration: none;
         color: #fff;
         font-size: 1.1em;
-        display: block;
-        padding: 8px 0; /* Ajusta el espaciado interno de los enlaces */
+        padding: 8px 0;
+        /* Ajusta el espaciado interno de los enlaces */
     }
 
-    
+
 }
