@@ -71,11 +71,7 @@ header {
 
 /* Estilos para la galería de productos */
 
-.appVueGallery {
-    display: flex;
-    border: 5px solid violet;
 
-}
 .gallery {
     margin-top: 200px;
     width: 100vw;
