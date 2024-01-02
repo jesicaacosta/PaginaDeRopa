@@ -66,8 +66,9 @@ header {
 }
 
 
-
 /* Estilos para la imagen de bienvenida */
+
+
 
 /* Estilos para la galería de productos */
 
@@ -81,6 +82,7 @@ header {
     border: 1px solid #e5b7ce;
     margin-bottom: 20px;
     padding: 20px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave para el cambio de color de fondo */
 }
 
 .card img {
@@ -92,6 +94,27 @@ header {
     text-align: center;
 }
 
+/* Añade estilos para la superposición al pasar el mouse */
+.card:hover {
+    position: relative; /* Establece la posición relativa para que los elementos secundarios se posicionen con respecto a este */
+}
+
+.card::before {
+    content: ""; /* Crea un pseudo-elemento antes del contenido real de la tarjeta */
+    position: absolute; /* Establece la posición absoluta para que se superponga al contenido de la tarjeta */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Permite que los eventos del mouse pasen a través de este elemento pseudo */
+    z-index: 1; /* Asegura que la superposición esté encima del contenido de la tarjeta */
+}
+
+/* Cambia el color de fondo al pasar el mouse */
+.card:hover::before {
+    background-color: #fff; /* Color blanco con una opacidad más alta al pasar el mouse */
+    opacity: .1;
+}
 
 
 /* Estilos específicos para el footer */
