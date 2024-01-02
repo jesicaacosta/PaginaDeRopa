@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeless indumentaria </title>
+    <meta name="theme-color" content="#e5b7ce">
 
     <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -32,25 +33,33 @@
 
         <div class="navbar">
             <ul class="nav__links">
-                <li class="nav__pc__links"><a href="index.html"><i class="fas fa-home"></i> Inicio </a></li>
-                <li class="nav__pc__links"><a href="productos.html"><i class="fas fa-bars"></i> Productos</a></li>
-                <li class="nav__pc__links"><a href="#"><i class="fas fa-city"></i> Locales</a></li>
-                <li class="nav__pc__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+                <li class="nav__pc__links"><a href="index.html">
+                        <i class="fas fa-home"></i> Inicio </a>
+                </li>
+                <li class="nav__pc__links"><a href="productos.html">
+                        <i class="fas fa-gift"></i></i> Productos</a>
+                </li>
+                <li class="nav__pc__links"><a href="locales.html">
+                    <i class="fas fa-city"></i> Locales</a>
+                </li>
+                <li class="nav__pc__links"><a href="contactanos.html">
+                    <i class="fas fa-address-book"></i> Contacto</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-        <!-- Nav Responsive -->
+    <!-- Nav Responsive -->
     <nav>
 
         <div class="navbar__responsive">
-    
-                <i class="fas fa-bars"></i>
-    
+
+            <i class="fas fa-bars"></i>
+
             <ul class="nav__responsive__links">
                 <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a>
                 </li>
-                <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-tag"></i> Productos</a>
+                <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-gift"></i> Productos</a>
                 </li>
                 <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a>
                 </li>
@@ -58,7 +67,7 @@
                         Contacto</a>
                 </li>
             </ul>
-    
+
         </div>
 
     </nav>
@@ -72,100 +81,100 @@
             <p>Bienvenida a Timeless</p>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/carrousel/carrousel(1).jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carrousel/carrousel(2).jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="images/carrousel/carrousel(3).jpg" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-              </div>
-            
-
-        <!-- Crea un contenedor con el id "appVueGallery-" que se asociará con la instancia de Vue llamada appVueGallery- -->
-        <div id="appVueGallery">
-            <!-- Define una sección con la clase "gallery" para mostrar la galería de productos -->
-            <section class="gallery">
-                <div class="container">
-                    <!-- Utiliza Vue.js para iterar sobre la lista de productos -->
-                    <div class="row">
-                        <div v-for="(producto, index) in productos" :key="index" class="col-lg-4 col-md-12 mb-4">
-                            <!-- Card de Bootstrap -->
-                            <div class="card">
-                                <!-- Imagen del producto -->
-                                <img :src="producto.imagen" :alt="producto.descripcion" class="card-img-top"
-                                    width="300px">
-                                <!-- Cuerpo de la tarjeta con información dinámica del producto -->
-                                <div class="card-body">
-                                    <!-- Nombre del país del producto -->
-                                    <p class="card-text">{{ producto.pais }}</p>
-                                    <!-- Precio del producto -->
-                                    <p class="card-text">Precio: {{ producto.precio }}</p>
-                                    <!-- Información sobre las cuotas -->
-                                    <p class="card-text">{{ producto.cuotas }}</p>
-                                </div>
-                            </div>
-                            <!-- Fin de la Card de Bootstrap -->
-                        </div>
+                    <div class="carousel-item active">
+                        <img src="images/carrousel/carrousel(1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrousel/carrousel(2).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrousel/carrousel(3).jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
 
 
-        <script>
-            new Vue({
-                el: '#appVueGallery',
-                data: {
-                    productos: [
-                        {
-                            imagen: 'images/Pantalones/pexels-gustavo-henrique-9261727.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Francia',
-                            precio: '$16,200',
-                            cuotas: '12 cuotas sin interés de $1,350.00'
-                        },
-                        {
-                            imagen: 'images/Pantalones/pexels-gustavo-henrique-9261733.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Grecia',
-                            precio: '$13,750',
-                            cuotas: '12 cuotas sin interés de $1,145.83'
-                        },
-                        {
-                            imagen: 'images/Pantalones/pexels-tnarg-4940236.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Australia',
-                            precio: '$19,900',
-                            cuotas: '12 cuotas sin interés de $1,658.33'
-                        },
-                        {
-                            imagen: 'images/1101/pexels-davide-de-giovanni-5762489.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Australia',
-                            precio: '$19,900',
-                            cuotas: '12 cuotas sin interés de $1,658.33'
-                        },
-                        {
-                            imagen: 'images/1101/pexels-dziana-hasanbekava-5480696.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Australia',
-                            precio: '$19,900',
-                            cuotas: '12 cuotas sin interés de $1,658.33'
-                        },
-                        {
-                            imagen: 'images/1101/pexels-marina-abrosimova-5929650.jpg',
-                            descripcion: 'ropa de media estación',
-                            pais: 'Australia',
-                            precio: '$19,900',
-                            cuotas: '12 cuotas sin interés de $1,658.33'
-                        },
-                    ]
-                },
-            });
+            <!-- Crea un contenedor con el id "appVueGallery-" que se asociará con la instancia de Vue llamada appVueGallery- -->
+            <div id="appVueGallery">
+                <!-- Define una sección con la clase "gallery" para mostrar la galería de productos -->
+                <section class="gallery">
+                    <div class="container">
+                        <!-- Utiliza Vue.js para iterar sobre la lista de productos -->
+                        <div class="row">
+                            <div v-for="(producto, index) in productos" :key="index" class="col-lg-4 col-md-12 mb-4">
+                                <!-- Card de Bootstrap -->
+                                <div class="card">
+                                    <!-- Imagen del producto -->
+                                    <img :src="producto.imagen" :alt="producto.descripcion" class="card-img-top"
+                                        width="300px">
+                                    <!-- Cuerpo de la tarjeta con información dinámica del producto -->
+                                    <div class="card-body">
+                                        <!-- Nombre del país del producto -->
+                                        <p class="card-text">{{ producto.pais }}</p>
+                                        <!-- Precio del producto -->
+                                        <p class="card-text">Precio: {{ producto.precio }}</p>
+                                        <!-- Información sobre las cuotas -->
+                                        <p class="card-text">{{ producto.cuotas }}</p>
+                                    </div>
+                                </div>
+                                <!-- Fin de la Card de Bootstrap -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <script>
+                new Vue({
+                    el: '#appVueGallery',
+                    data: {
+                        productos: [
+                            {
+                                imagen: 'images/Pantalones/pexels-gustavo-henrique-9261727.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Francia',
+                                precio: '$16,200',
+                                cuotas: '12 cuotas sin interés de $1,350.00'
+                            },
+                            {
+                                imagen: 'images/Pantalones/pexels-gustavo-henrique-9261733.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Grecia',
+                                precio: '$13,750',
+                                cuotas: '12 cuotas sin interés de $1,145.83'
+                            },
+                            {
+                                imagen: 'images/Pantalones/pexels-tnarg-4940236.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Australia',
+                                precio: '$19,900',
+                                cuotas: '12 cuotas sin interés de $1,658.33'
+                            },
+                            {
+                                imagen: 'images/1101/pexels-davide-de-giovanni-5762489.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Australia',
+                                precio: '$19,900',
+                                cuotas: '12 cuotas sin interés de $1,658.33'
+                            },
+                            {
+                                imagen: 'images/1101/pexels-dziana-hasanbekava-5480696.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Australia',
+                                precio: '$19,900',
+                                cuotas: '12 cuotas sin interés de $1,658.33'
+                            },
+                            {
+                                imagen: 'images/1101/pexels-marina-abrosimova-5929650.jpg',
+                                descripcion: 'ropa de media estación',
+                                pais: 'Australia',
+                                precio: '$19,900',
+                                cuotas: '12 cuotas sin interés de $1,658.33'
+                            },
+                        ]
+                    },
+                });
 
 
 
@@ -174,7 +183,7 @@
 
 
 
-        </script>
+            </script>
 
 
     </main>
