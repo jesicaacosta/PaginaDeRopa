@@ -14,6 +14,7 @@ body {
 /* Estilos para el header */
 header {
     position: fixed;
+    display: flex;
     z-index: 100;
     top: 0;
     background-color: #e5b7ce;
@@ -29,12 +30,14 @@ header {
 .navbar {   
     display: flex;
     position: fixed;
-    top: 70px;
+    top: 80px;
     z-index: 200;
     background-color: #e5b7ce;
     width: 100vw;
     justify-content: center;
+    align-content: center;
     padding: 10px auto;
+    margin: auto;
 }
 
 .nav__pc__links {
@@ -66,21 +69,22 @@ header {
 /* Estilos para la imagen de bienvenida */
 .carouselPrincipal {
     position: relative;
-    top: 20vh;
-    height: 85vh;
-}
-.carousel-item img {
-    object-fit: scale-down; /* Ajusta la imagen para cubrir la altura y el ancho especificados */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    top: 15vh;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden; /* Asegura que el contenido que se desborda del contenedor no sea visible */
 }
 
 .carousel-inner {
-    height: 100%;
-    padding: auto 0;
     display: flex;
-    align-items: center;
+    height: 100%;
 }
 
+.carousel-item img {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 100%; /* Ocupa el 100% del alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+}
 
 /* Estilos para la galería de productos */
 .gallery {
@@ -430,23 +434,18 @@ h1 {
 
     .navbar__responsive__links li {
         margin-bottom: 5px;
-        /* Espaciado entre elementos de la lista */
     }
 
     .navbar__responsive__links {
         list-style: none;
         padding: 0;
         margin: 0;
-        /* Ajusta el margen para evitar espacios innecesarios */
     }
 
     .navbar__responsive__links a {
         text-decoration: none;
         color: #fff;
         font-size: 1.1em;
-        padding: 8px 0;
-        /* Ajusta el espaciado interno de los enlaces */
+        padding: 8px 0;   
     }
-
-
 }
