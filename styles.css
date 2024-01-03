@@ -66,7 +66,7 @@ header {
 /* Estilos para la imagen de bienvenida */
 .carouselPrincipal {
     position: relative;
-    top: 140px;
+    top: 20vh;
     height: 85vh;
 }
 .carousel-item img {
@@ -83,7 +83,6 @@ header {
 
 
 /* Estilos para la galería de productos */
-/* Estilos para la galería de productos */
 .gallery {
     margin-top: 200px;
     width: 100vw;
@@ -91,7 +90,6 @@ header {
 
 .card {
     border: 1px solid #e5b7ce;
-    margin-bottom: 20px;
     padding: 5px;
     transition: background-color 0.2s ease; /* Agrega una transición suave para el cambio de color de fondo */
     display: flex; /* Utiliza flexbox para organizar los elementos */
@@ -102,13 +100,22 @@ header {
     width: 100%; /* Establece el ancho al 70% del contenedor */
     height: 500px; /* Establece la altura automáticamente para mantener la relación de aspecto */
     object-fit: cover;
+    margin-bottom:10px ;
 }
 
 .card-body {
     text-align: center;
     width: 100%; 
-    height: 70%;
-    padding: 10px; /* Añade un poco de espacio entre la imagen y el texto */
+    height: 70%;; 
+}
+
+.card-body p {
+    margin: 5px auto;
+}
+/* Estilos para el primer p de cards*/
+.card p:first-of-type {    
+    color: #790560;
+    font-weight: bold;
 }
 
 
