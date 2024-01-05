@@ -49,9 +49,7 @@
 
     <nav class="navbar">
     
-        <div class="nav_bars" id="menuIcon">
-            <i class="fas fa-bars"></i>
-        </div>
+
 
         <ul class="nav__links">
             <li class="nav__pc__links"><a href="index.html">
@@ -71,20 +69,24 @@
     </nav>
 
 
-
     <!-- Menú responsive para dispositivos móviles -->
-    <ul class="nav__responsive__links" id="responsiveMenu">
+    <div class="navbar__responsive">
+        <div class="nav_bars" id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+    <ul class="nav__responsive__links  " id="responsiveMenu">
+
         <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
         <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
         <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
         <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
                 Contacto</a></li>
     </ul>
-
+</div>
 
     <main>
         <!-- Imagen de bienvenida animada -->
-        <div class="bienvenida">
             <div id="carouselMetasAutoplaying" class="carousel slide carouselMetas carouselPrincipal"
                 data-bs-ride="carousel">
                 <div class="carousel-inner"> <!-- Interior del carousel-->
@@ -109,7 +111,6 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-        </div>
 
 
         <!-- Crea un contenedor con el id "appVueGallery-" que se asociará con la instancia de Vue llamada appVueGallery- -->
