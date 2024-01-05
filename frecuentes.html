@@ -8,16 +8,18 @@
     <meta name="theme-color" content="#e5b7ce">
 
     <!-- Meta datos poara tarjetas de redes sociales -->
-    <meta property="og:title" content="Timeless Indumentaria"/>
-    <meta property="og:description" content="Descubre nuestra exclusiva colección de indumentaria femenina para toda ocasión. Explora productos de alta calidad, aprovecha descuentos especiales y vive la moda con Timeless. 🌟 #ModaFemenina #TimelessFashion"/>
-    <meta property="og:url" content="https://jesicadaiana.github.io/pagTimeless/"/>
+    <meta property="og:title" content="Timeless Indumentaria" />
+    <meta property="og:description"
+        content="Descubre nuestra exclusiva colección de indumentaria femenina para toda ocasión. Explora productos de alta calidad, aprovecha descuentos especiales y vive la moda con Timeless. 🌟 #ModaFemenina #TimelessFashion" />
+    <meta property="og:url" content="https://jesicadaiana.github.io/pagTimeless/" />
 
     <!-- Imagen diferente para cada pagina -->
-    <meta property="og:image" content="C:\Users\jesic\GitHub\pagTimeless\images\1101\re3.jpg"/>
+    <meta property="og:image" content="C:\Users\jesic\GitHub\pagTimeless\images\1101\re3.jpg" />
 
     <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Código CSS  -->
     <link rel="stylesheet" href="styles.css">
 
@@ -34,51 +36,46 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
+    <header
+        <div>
+            <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
+        </div>
     </header>
 
-    <!-- Nav Pc -->
-    <nav>
+    <!-- Menu  Pc -->
+    <!-- Icono de menú para dispositivos móviles -->
 
-        <div class="navbar">
-            <ul class="nav__links">
-                <li class="nav__pc__links"><a href="index.html">
-                        <i class="fas fa-home"></i> Inicio </a>
-                </li>
-                <li class="nav__pc__links"><a href="productos.html">
-                        <i class="fas fa-gift"></i></i> Productos</a>
-                </li>
-                <li class="nav__pc__links"><a href="locales.html">
+
+    <nav class="navbar">
+        <ul class="nav__links">
+            <li class="nav__pc__links"><a href="index.html">
+                    <i class="fas fa-home"></i> Inicio </a>
+            </li>
+            <li class="nav__pc__links"><a href="productos.html">
+                    <i class="fas fa-gift"></i></i> Productos</a>
+            </li>
+            <li class="nav__pc__links"><a href="locales.html">
                     <i class="fas fa-city"></i> Locales</a>
-                </li>
-                <li class="nav__pc__links"><a href="contactanos.html">
+            </li>
+            <li class="nav__pc__links"><a href="contactanos.html">
                     <i class="fas fa-address-book"></i> Contacto</a>
-                </li>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </nav>
 
-    <!-- Nav Responsive -->
-    <nav>
 
-        <div class="navbar__responsive">
+    <!-- Menú responsive para dispositivos móviles -->
+    <div class="navbar__responsive">
 
-            <i class="fas fa-bars"></i>
+        <div class="nav_bars" id="menuIcon"> <i class="fas fa-bars"></i> </div>
 
-            <ul class="nav__responsive__links">
-                <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a>
-                </li>
-                <li class="navbar__responsive__links"><a href="rem.html"><i class="fas fa-gift"></i> Productos</a>
-                </li>
-                <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a>
-                </li>
-                <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i>
-                        Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <ul class="nav__responsive__links  " id="responsiveMenu">
+        <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
+        <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
+        <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+    </ul>
+</div>
 
 
     <body>
