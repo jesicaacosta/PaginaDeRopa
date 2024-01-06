@@ -3,29 +3,14 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 body {
     background-color: #f0f0f0;
 }
 
-
 /* Estilos para el header */
-header {
-    position: fixed;
-    display: flex;
-    z-index: 200;
-    top: 0;
-    background-color: #e0c5c5;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    height: 15vh;
-}
-header img {
-    padding: 30px auto;
-}
 
 .navbar__responsive {
     display: none;
@@ -34,32 +19,28 @@ header img {
 /* Estilos para las barras del icono de menú */
 .nav_bars i {
     display: none;
-    font-size: 24px; /* Tamaño de las barras */
+    font-size: 20px; /* Tamaño de las barras */
     color: #ffffff; /* Color de las barras */
-    margin-right: 0; /* Margen derecho para separar las barras del texto, ajusta según sea necesario */
 }
 
 .navbar {   
     display: flex;
     position: fixed;
-    top: 80px;
+    top: 0px;
     z-index: 200;
     background-color: #e0c5c5;
     width: 100vw;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    padding: 10px auto;
-    margin: auto;
 }
- 
 
 .nav__pc__links {
     list-style: none;
     display: inline;
+    font-size: 1.2em;
 }
 
 .nav__pc__links a {
-    display: inline;
     text-decoration: none;
     color: #000000;
     width: 200px;
@@ -73,7 +54,7 @@ header img {
     color: #ffffff;
     position: relative;
     left: 0;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .nav__pc__links i {
@@ -249,8 +230,6 @@ footer {
     margin-bottom: 20px;
     /* Agrega espacio inferior */
 }
-
-
 
 .form__mail h3 {
     font-size: 1.2em;
