@@ -36,17 +36,17 @@
 </head>
 
 <body>
-    <header
-        <div>
-            <img src="images/logo.png" width="200px" alt="logo" class="header__logo">
-        </div>
+    <header>
     </header>
 
     <!-- Menu  Pc -->
-    <!-- Icono de menú para dispositivos móviles -->
-
-
     <nav class="navbar">
+        <span class="logo-principal">
+            <a href="index.html">            
+                <img src="images/logo.png" width="200px" alt="logo" >
+            </a>
+        </span>
+
         <ul class="nav__links">
             <li class="nav__pc__links"><a href="index.html">
                     <i class="fas fa-home"></i> Inicio </a>
@@ -74,8 +74,42 @@
         <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
         <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
         <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
+        <span class="logo-principal">
+            <a href="index.html">            
+                <img src="images/logo.png" width="200px" alt="logo" >
+            </a>
+        </span>
     </ul>
 </div>
+
+        <!-- Imagen de bienvenida animada -->
+            <div id="carouselMetasAutoplaying" class="carousel slide carouselMetas carouselPrincipal"
+                data-bs-ride="carousel">
+                <div class="carousel-inner"> <!-- Interior del carousel-->
+                    <div class="carousel-item active">
+                        <img src="./images/carrousel/carrousel(1).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carrousel/carrousel(2).jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/carrousel/carrousel(3).jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetasAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMetasAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+        
+   
 
           <main>
 
