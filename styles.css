@@ -379,6 +379,38 @@ h1 {
 
 
 
+/*PAGINA LOCALES */
+
+.card-sucursal h5 {
+    color: #333 ;
+}
+
+/* Estilos para el cuarto párrafo dentro de .card-sucursal */
+.carousel-inner-Productos {
+    width: 25vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 767) */
 @media screen and (max-width: 1200px) {
     .navbar__responsive {
@@ -441,16 +473,4 @@ h1 {
         width: 100%;
         object-fit: contain;
     }
-}
-
-
-/*PAGINA LOCALES */
-
-.card-sucursal h5 {
-    color: #333 ;
-}
-
-/* Estilos para el cuarto párrafo dentro de .card-sucursal */
-.carousel-inner-Productos {
-    width: 25vw;
 }
