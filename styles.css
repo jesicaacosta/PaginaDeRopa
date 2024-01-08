@@ -8,6 +8,8 @@
 
 body {
     background-color: #f0f0f0;
+    position: relative;
+    top: 170px;
 }
 
 /* Estilos para el header */
@@ -440,4 +442,16 @@ h1 {
     .nav__responsive__links.show {
         display: flex; /* Muestra el menú cuando tiene la clase "show" */
     }
+}
+
+
+/*PAGINA LOCALES */
+
+.card-sucursal h5 {
+    color: #333 ;
+}
+
+/* Estilos para el cuarto párrafo dentro de .card-sucursal */
+.card-text:nth-child(4) {
+    font-style: italic;
 }
