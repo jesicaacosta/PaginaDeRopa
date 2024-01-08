@@ -377,26 +377,11 @@ h1 {
 
 /* PRODUCTOS */
 
-.main__productos {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100vw;
-    padding: 5px;
-}
 
-
-.aside__productos {
-    position: fixed;
-    left: 0;
-    top: 10%;
-    background-color: #e5b7ce;
-    height: 100vh;
-    padding: 0 20px;
-}
 
 
 /* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 767) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     .navbar__responsive {
         display: block;
         height: 20vh;
