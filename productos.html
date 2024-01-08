@@ -1,103 +1,204 @@
-</div>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeless indumentaria </title>
+    <meta name="theme-color" content="#e5b7ce">
+
+    <!-- Meta datos poara tarjetas de redes sociales -->
+    <meta property="og:title" content="Timeless Indumentaria" />
+    <meta property="og:description"
+        content="Descubre nuestra exclusiva colección de indumentaria femenina para toda ocasión. Explora productos de alta calidad, aprovecha descuentos especiales y vive la moda con Timeless. 🌟 #ModaFemenina #TimelessFashion" />
+    <meta property="og:url" content="https://jesicadaiana.github.io/pagTimeless/" />
+
+    <!-- Imagen diferente para cada pagina -->
+    <meta property="og:image" content="C:\Users\jesic\GitHub\pagTimeless\images\1101\re3.jpg" />
+
+    <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Código CSS  -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- Awesome -->
+    <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <!-- Menu  Pc -->
+    <nav class="navbar">
+        <span class="logo-principal">
+            <a href="index.html">            
+                <img src="images/logo.png" width="200px" alt="logo" >
+            </a>
+        </span>
+
+        <ul class="nav__links">
+            <li class="nav__pc__links"><a href="index.html">
+                    <i class="fas fa-home"></i> Inicio </a>
+            </li>
+            <li class="nav__pc__links"><a href="productos.html">
+                    <i class="fas fa-gift"></i></i> Productos</a>
+            </li>
+            <li class="nav__pc__links"><a href="locales.html">
+                    <i class="fas fa-city"></i> Locales</a>
+            </li>
+            <li class="nav__pc__links"><a href="contactanos.html">
+                    <i class="fas fa-address-book"></i> Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
 
 
     <main>
-        <div class="container mt-5">
-            <!-- Utiliza Vue.js para iterar sobre la lista de productos -->
-            <div class="row">
-                <div v-for="(producto, index) in productos" :key="index" class="col-lg-4 col-md-6 mb-4">
-                    <!-- Card de Bootstrap -->
-                    <div class="card">
-                        <!-- Imagen del producto -->
-                        <img :src="producto.imagen" :alt="producto.descripcion" class="card-img-top" width="300px">
-                        <!-- Cuerpo de la tarjeta con información dinámica del producto -->
-                        <div class="card-body">
-                            <!-- Nombre del país del producto -->
-                            <h5 class="card-title">{{ producto.descripcion }}</h5>
-                            <!-- Precio del producto -->
-                            <p class="card-text">Precio: {{ producto.precio }}</p>
-                            <!-- Información sobre las cuotas -->
-                            <p class="card-text">{{ producto.cuotas }}</p>
-                            <!-- Enlace a la página de detalles del producto -->
-                            <a :href="'producto-detalle.html?id=' + index" class="btn btn-primary">Detalles</a>
+
+            <div id="appVueCarousel">
+                <div id="carouselProductos" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner carousel-inner-Productos">
+                        <div v-for="(producto, index) in productos" :key="index" :class="{ 'carousel-item': true, 'active': index === 0 }">
+                            <img :src="producto.imagen" class="d-block w-100" :alt="'Slide ' + (index + 1)">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ producto.descripcion }}</h5>
+                                <p>Precio: {{ producto.precio }}</p>
+                                <p>{{ producto.cuotas }}</p>
+                                <a :href="'producto-detalle.html?id=' + index" class="btn btn-primary">Detalles</a>
+                            </div>
                         </div>
                     </div>
-                    <!-- Fin de la Card de Bootstrap -->
+                    <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
-        </div>
     </main>
 
-    <footer>
-        <div class="footer__cont">
-            <div class="footer__links">
-                <!-- Redes sociales -->
-                <ul class="list-nav">
-                    <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por WhatsApp</a></li>
-                    <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
-                    <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
-                    <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a></li>
-                    <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
-                </ul>
-            </div>
-            <!-- Medios de pago -->
-            <div>
-                <h2>MEDIOS DE PAGO</h2>
-                <!-- Aquí van tus imágenes de medios de pago -->
-            </div>
-            <div class="envios">
-                <h2>FORMAS DE ENVÍO</h2>
-                <!-- Aquí van tus imágenes de formas de envío -->
-            </div>
-        </div>
-    </footer>
+      <footer>
+         <div>
+             <!-- Footer -->
+             <div class="footer__cont">
+                 <div class="footer__links">
+                     <!-- Redes sociales -->
+                     <ul class="list-nav">
+                         <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i
+                                     class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
+                         <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
+                         <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
+                         <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a>
+                         </li>
+                         <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
+                     </ul>
+ 
+ 
+                     <!-- Medios de pago -->
+                     <div>
+                         <h2>MEDIOS DE PAGO</h2>
+                         <img src="images/medios/visa.png" alt="visa" width="50px">
+                         <img src="images/medios/master.png" alt="visa" width="50px">
+                         <img src="images/medios/american.png" alt="visa" width="50px">
+                         <img src="images/medios/diner.png" alt="visa" width="50px">
+                         <img src="images/medios/banelco.png" alt="visa" width="50px">
+                         <img src="images/medios/cabal.png" alt="visa" width="50px">
+                         <img src="images/medios/naranja.png" alt="visa" width="50px">
+                         <img src="images/medios/shopp.png" alt="visa" width="50px">
+                         <img src="images/medios/mp.png" alt="visa" width="50px">
+                         <img src="images/medios/arg.png" alt="visa" width="50px">
+                         <img src="images/medios/cenco.png" alt="visa" width="50px">
+                         <img src="images/medios/pago.png" alt="visa" width="50px">
+                         <img src="images/medios/rapi.png" alt="visa" width="50px">
+                     </div>
+ 
+                     <div class="envios">
+                         <h2>FORMAS DE ENVÍO</h2>
+                         <img src="images/medios/envio.png" alt="visa" width="50px">
+                         <img src="images/medios/correo.png" alt="visa" width="50px">
+                     </div>
+ 
+                 </div>
+     </footer>
+ 
 
-    <!-- Incluye el script de jQuery, que es una biblioteca de JavaScript, para facilitar la manipulación del DOM y otras operaciones -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <!-- Incluye el script de Popper.js, una biblioteca que se utiliza junto con Bootstrap para manejar la posición de los elementos emergentes y otras interacciones -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <!-- Incluye el script de Bootstrap, que proporciona funcionalidades y estilos predefinidos para mejorar el diseño y la interactividad de la página -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <script>
+     <script>
         new Vue({
-            el: '#app',
+            el: '#appVueCarousel',
             data: {
                 productos: [
                     {
-                        imagen: 'images/Pantalones/pexels-gustavo-henrique-9261727.jpg',
-                        descripcion: 'ropa de media estación',
-                        pais: 'Francia',
-                        precio: '$16,200',
-                        cuotas: '12 cuotas sin interés de $1,350.00'
+                        imagen: 'images/Sweater/d.jpg',
+                        descripcion: 'Producto 1',
+                        precio: '$100',
+                        cuotas: '3 cuotas de $33.33'
                     },
                     {
-                        imagen: 'images/Pantalones/pexels-gustavo-henrique-9261733.jpg',
-                        descripcion: 'ropa de media estación',
-                        pais: 'Grecia',
-                        precio: '$13,750',
-                        cuotas: '12 cuotas sin interés de $1,145.83'
+                        imagen: 'images/Sweater/h.jpg',
+                        descripcion: 'Producto 2',
+                        precio: '$150',
+                        cuotas: '3 cuotas de $50'
                     },
                     {
-                        imagen: 'images/Pantalones/pexels-tnarg-4940236.jpg',
-                        descripcion: 'ropa de media estación',
-                        pais: 'Australia',
-                        precio: '$19,900',
-                        cuotas: '12 cuotas sin interés de $1,658.33'
+                        imagen: 'images/producto3.jpg',
+                        descripcion: 'Producto 3',
+                        precio: '$120',
+                        cuotas: '3 cuotas de $40'
                     },
-                    // Agrega más productos aquí
                     {
-                        imagen: 'images/Otros/nuevo-producto.jpg',
-                        descripcion: 'Descripción del nuevo producto',
-                        pais: 'Tu país',
-                        precio: '$XX,XXX',
-                        cuotas: '12 cuotas sin interés de $X,XXX.XX'
+                        imagen: 'images/producto4.jpg',
+                        descripcion: 'Producto 4',
+                        precio: '$180',
+                        cuotas: '3 cuotas de $60'
                     },
-                    // Puedes seguir agregando más productos según lo necesites
+                    {
+                        imagen: 'images/producto5.jpg',
+                        descripcion: 'Producto 5',
+                        precio: '$90',
+                        cuotas: '3 cuotas de $30'
+                    },
+                    {
+                        imagen: 'images/producto6.jpg',
+                        descripcion: 'Producto 6',
+                        precio: '$200',
+                        cuotas: '3 cuotas de $66.67'
+                    }
+                    // Puedes agregar más productos según sea necesario
                 ]
-            }
+            },
         });
     </script>
-</body>
+ 
 
-</html>
+
+     <!-- jQuery -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+ 
+     <!-- Popper.js, una biblioteca que se utiliza junto con Bootstrap para manejar la posición de los elementos emergentes y otras interacciones -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+ 
+     <!-- Bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+         crossorigin="anonymous"></script>
+ 
+ 
+        </body>
+
+ 
+ </html>
