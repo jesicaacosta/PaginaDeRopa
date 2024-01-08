@@ -9,7 +9,6 @@
 body {
     background-color: #f0f0f0;
     position: relative;
-    top: 170px;
 }
 
 /* Estilos para el header */
@@ -381,12 +380,13 @@ h1 {
 
 
 /* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 767) */
-@media screen and (max-width: 767) {
+@media screen and (max-width: 1200px) {
     .navbar__responsive {
         display: block;
-        height: 20vh;
     }
-
+.navbar {
+    background-color: #e0c5c5;
+}
     .nav__links {
         display: none;
     }
@@ -399,7 +399,7 @@ h1 {
         position: fixed;
         top: 90px;
         padding: 8px;
-        background-color: #e5b7ce;
+        background-color: #e0c5c5;
     }
 
     .nav__responsive__links {
@@ -409,7 +409,7 @@ h1 {
         align-items: flex-start;
         list-style: none;
         position: fixed;
-        top: 130px;
+        top: 120px;
         left: 0;
         height: 100vh;
         background-color: #e9e9e9;
@@ -417,15 +417,29 @@ h1 {
         display: none; 
         margin: 0;
         padding: 10px;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+
     }
 
     .nav__responsive__links a {
         text-decoration: none;
         color: #333;
+
     }
 
     .nav__responsive__links.show {
         display: flex; /* Muestra el menú cuando tiene la clase "show" */
+
+    }
+    .img-responsive{
+        width: 60%;
+        position: relative;
+        left: 10;
+        top: 65%;
+    }
+    .img-responsive img {
+        width: 100%;
+        object-fit: contain;
     }
 }
 
