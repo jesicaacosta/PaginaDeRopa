@@ -1,3 +1,5 @@
+
+
 //Comportamiento de los botones del form
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -5,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
          var form = document.getElementById('contactForm');
          form.addEventListener('submit', function (event) {
                   event.preventDefault(); // Evita que se envíe el formulario por defecto
-                  alert("El mensaje será enviado")
+                  alert("El mensaje será enviado " + nombreUsuario + "!");
                   form.submit();
          });
 
@@ -18,3 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
                   }
          });
 });
+
+
+//eventos de la pagina
+
+console.log(document); //llamo al objeto document , que es u obj nativo del navegador, ya forma parte de este 
+const nombreUsuario = document.getElementById('nombreUsuario');
+console.log(nombreUsuario.value)

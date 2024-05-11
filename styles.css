@@ -84,6 +84,25 @@ body {
 }
 
 /* Estilos para la galería de productos */
+
+#appVueCarousel { /*Carousel */
+    position: relative;
+    top: 100px;
+    margin: 100px auto;
+    height: auto;
+}
+
+
+#carouselProductos {
+    border: 2px solid rgb(52, 32, 233);
+}
+
+.carousel-inner  {
+    border: 2px solid rgb(32, 233, 49);
+    margin: 20px;
+}
+
+
 .gallery {
     width: 100vw;
     position: relative;
