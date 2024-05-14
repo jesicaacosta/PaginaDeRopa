@@ -27,3 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
 console.log(document); //llamo al objeto document , que es u obj nativo del navegador, ya forma parte de este 
 const nombreUsuario = document.getElementById('nombreUsuario');
 console.log(nombreUsuario.value)
+
+
+$(document).ready(function(){
+         $('.navbar-toggler').click(function(){
+             $('.navbar-collapse').toggleClass('show');
+         });
+     });
+     

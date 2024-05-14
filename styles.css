@@ -1,75 +1,71 @@
-/* Estilos Generales*/
-
+/* Estilos Generales */
+/* ---------------------------------------- */
 * {
     margin: 0;
     box-sizing: border-box;
-    font-size: 19px;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
     background-color: #f0f0f0;
-    position: relative;
 }
 
-/* Estilos para el header */
-
-.navbar__responsive {
-    display: none;
+.titulos {
+    font-family: "Noto Serif", serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d82c96;
+    text-align: center;
 }
 
-/* Estilos para las barras del icono de menú */
-.nav_bars i {
-    display: none;
-    font-size: 20px; /* Tamaño de las barras */
-    color: #ffffff; /* Color de las barras */                                                                                                        
+.subtitulos {
+    font-family: "Noto Serif", serif;
+    text-transform: lowercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 3px auto;
+    color: #9e3174;
 }
 
-.navbar {   
+
+/*Header */
+
+.navbar {
     display: flex;
     position: fixed;
-    top: 0px;
-    z-index: 200;
-    background-color: #e0c5c5;
+    top: 0;
+    justify-content: space-around;
+    z-index: 2000;
     width: 100vw;
-    justify-content: space-between;
-    align-content: center;
+
 }
 
-.nav__pc__links {
-    list-style: none;
-    display: inline;
-    font-size: 1.2em;
+.nav-item {
+    color: #77db2f;
+    margin: auto 10px;
 }
 
-.nav__pc__links a {
-    text-decoration: none;
-    color: #000000;
-    width: 200px;
-    font-size: 1.1em;
-    margin: auto 2em;
+.form-inline {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
-.nav__pc__links li {
-    display: inline;
-}
-.nav__pc__links a:hover {
-    color: #ffffff;
-    position: relative;
-    left: 0;
-    overflow: hidden; 
-}
-
-.nav__pc__links i {
-    padding: auto 10px;
-}
-
 
 /* Estilos para la imagen de bienvenida */
+/* ---------------------------------------- */
 .carouselPrincipal {
-    position: relative;
-    top: 150px;
     height: 70vh;
     width: 100vw;
-    overflow: hidden; /* Asegura que el contenido que se desborda del contenedor no sea visible */
+    overflow: hidden;
+    position: relative;
+    top: 30vh;
 }
 
 .carousel-inner {
@@ -78,99 +74,80 @@ body {
 }
 
 .carousel-item img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor manteniendo la relación de aspecto */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Estilos para la galería de productos */
-
-#appVueCarousel { /*Carousel */
-    position: relative;
-    top: 100px;
-    margin: 100px auto;
-    height: auto;
-}
-
-
-#carouselProductos {
-    border: 2px solid rgb(52, 32, 233);
-}
-
-.carousel-inner  {
-    border: 2px solid rgb(32, 233, 49);
-    margin: 20px;
-}
-
-
+/* Estilos para la sección de galería de productos */
+/* ---------------------------------------- */
 .gallery {
     width: 100vw;
     position: relative;
-    top: 160px; 
+    top: 160px;
     margin: 20px auto;
 }
 
 .card {
     padding: 5px;
-    transition: background-color 0.1s ease; /* Agrega una transición suave para el cambio background */
-    display: flex; 
-    align-items: center; 
+    transition: background-color 0.1s ease;
+    display: flex;
+    align-items: center;
 }
 
 .card img {
-    width: 100%; 
-    height: 500px; 
+    width: 100%;
+    height: 500px;
     object-fit: cover;
-    margin-bottom:10px ;
-    }
+    margin-bottom: 10px;
+}
 
 .card-body {
     text-align: center;
-    width: 100%; 
-    height: 70%;; 
+    width: 100%;
+    height: 70%;
 }
 
 .card-body p {
     margin: 5px auto;
 }
-/* Estilos para el primer p de cards*/
-.card p:first-of-type {    
+
+.card p:first-of-type {
     color: #584b53;
     font-weight: bold;
 }
 
-
-/* Añade estilos para la superposición al pasar el mouse */
 .card:hover {
-    position: relative; /* Establece la posición relativa para que los elementos secundarios se posicionen con respecto a este */
+    position: relative;
 }
 
 .card::before {
-    content: ""; /* Crea un pseudo-elemento antes del contenido real de la tarjeta */
-    position: absolute; /* Establece la posición absoluta para que se superponga al contenido de la tarjeta */
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    pointer-events: none; /* Permite que los eventos del mouse pasen a través de este elemento pseudo */
-    z-index: 1; /* Asegura que la superposición esté encima del contenido de la tarjeta */
+    pointer-events: none;
+    z-index: 1;
 }
 
-/* Cambia el color de fondo al pasar el mouse */
 .card:hover::before {
-    background-color: #fff; /* Color blanco con una opacidad más alta al pasar el mouse */
+    background-color: #fff;
     opacity: .1;
 }
 
-
 /* Estilos específicos para el footer */
-
+/* ---------------------------------------- */
 footer {
     background-color: #e0c5c5;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     position: relative;
-    top: 200px;
+    top: 100px;
+    bottom: 0;
+    margin-top: 100px;
+    width: 100dvw;
 }
 
 .footer__cont {
@@ -203,52 +180,65 @@ footer {
     font-weight: bold;
 }
 
-
-/* Estilos para la sección de Medios de Pago y Formas de Envío */
-
 .footer__cont>div {
     text-align: center;
 }
 
 .footer__cont h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 10px;
+    color: #584b53;
 }
 
 .footer__cont img {
-    margin: 5px;
-    width: 50px;
+    margin: 1px;
+    width: 2em;
     height: auto;
 }
 
+.envios img {
+    margin: 8px 2px;
+    width: 4em;
+    height: auto;
+}
 
+/* Estilos específicos para dispositivos móviles */
+/* ---------------------------------------- */
+@media screen and (max-width: 1200px) {}
 
+/* PAGINA PRODUCTOS */
+
+#appVueCarousel {
+    /*Carousel */
+    position: relative;
+    top: 100px;
+    margin: 100px auto;
+    height: auto;
+}
+
+#carouselProductos {
+    border: 2px solid rgb(52, 32, 233);
+}
 
 /* Pagina contactanos */
 .form__mail {
     margin-top: 200px;
     width: 70%;
     margin: 200px auto;
-    /* Centra el formulario en la página */
     padding: 20px;
-    /* Agrega algún espaciado interno */
     text-align: center;
 }
 
-/* Estilos personalizados para la etiqueta label */
 .form__mail label {
     font-size: 1.5em;
 }
-
 
 .form__mail h2 {
     font-size: 1.8rem;
     color: #584b53;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    /* Cambia a negrita para mayor énfasis */
     margin-bottom: 20px;
-    /* Agrega espacio inferior */
 }
 
 .form__mail h3 {
@@ -271,11 +261,9 @@ footer {
     font-size: 15px;
     font-weight: bold;
     padding: 10px 20px;
-    /* Ajusta el espaciado del botón */
     text-decoration: none;
     text-shadow: 0px -1px 0px #ced9bf;
     transition: background 0.3s;
-    /* Agrega transición para un cambio suave */
 }
 
 .form__button:hover {
@@ -292,11 +280,8 @@ footer {
     background-color: #e5b7ce;
     border: none;
     padding: 8px;
-    /* Agrega algún relleno a los campos de entrada */
     margin-bottom: 10px;
-    /* Agrega espacio inferior entre campos */
     width: 60%;
-
 }
 
 .form__mail input:focus {
@@ -305,13 +290,11 @@ footer {
     border: none;
 }
 
-/* Añade estilos para las etiquetas */
 .form__mail label {
     display: block;
     margin-bottom: 10px;
     font-size: 1em;
     color: #333;
-    /* Color de texto más oscuro para las etiquetas */
 }
 
 .ubicacion {
@@ -343,27 +326,11 @@ fieldset legend {
     margin-bottom: 10px;
 }
 
-
-
-/*Pagina productos*/
-
-
 /*PAGINA FRECUENTES*/
 
 .main__frecuentes {
-    margin: 130px auto;
-    width: 90%;
-}
-
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}
-
-.main__frecuentes p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 100;
-    margin: 20px auto;
+    padding: 10px;
+    background-color: #e8d0a1;
 }
 
 /*PAGINA TALLES */
@@ -395,101 +362,13 @@ h1 {
 
 /* PRODUCTOS */
 
-
-
-
 /*PAGINA LOCALES */
 
 .card-sucursal h5 {
-    color: #333 ;
+    color: #333;
 }
 
 /* Estilos para el cuarto párrafo dentro de .card-sucursal */
 .carousel-inner-Productos {
     width: 25vw;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos específicos para dispositivos móviles (ancho de pantalla menor a 767) */
-@media screen and (max-width: 1200px) {
-    .navbar__responsive {
-        display: block;
-    }
-.navbar {
-    background-color: #e0c5c5;
-}
-    .nav__links {
-        display: none;
-    }
-
-    .navbar__responsive i {
-        color: #333;
-        display: block;
-        z-index: 1000;
-        width: 100vw;
-        position: fixed;
-        top: 90px;
-        padding: 8px;
-        background-color: #e0c5c5;
-    }
-
-    .nav__responsive__links {
-        display: flex;
-        width: 40vw;
-        flex-direction: column;
-        align-items: flex-start;
-        list-style: none;
-        position: fixed;
-        top: 120px;
-        left: 0;
-        height: 100vh;
-        background-color: #e9e9e9;
-        z-index: 300; /* Asegúrate de que esté por encima de otros elementos */
-        display: none; 
-        margin: 0;
-        padding: 10px;
-        transition: opacity 0.5s ease, max-height 0.5s ease;
-
-    }
-
-    .nav__responsive__links a {
-        text-decoration: none;
-        color: #333;
-
-    }
-
-    .nav__responsive__links.show {
-        display: flex; /* Muestra el menú cuando tiene la clase "show" */
-
-    }
-    .img-responsive{
-        width: 60%;
-        position: relative;
-        left: 10;
-        top: 65%;
-    }
-    .img-responsive img {
-        width: 100%;
-        object-fit: contain;
-    }
 }
