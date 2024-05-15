@@ -227,12 +227,10 @@ footer {
 
 /* Pagina contactanos */
 .container {
-    background-color: #757d6f;
 }
 .cajaContenedoraImgForm{
     margin: 100px auto;
     padding: 10px;
-    border: 2px solid red;
 
 }
 .form__mail {
