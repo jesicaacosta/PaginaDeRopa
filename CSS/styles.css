@@ -209,8 +209,6 @@ footer {
     height: auto;
 }
 
-
-
 /* Pagina productos */
 
 #appVueCarousel {
@@ -221,7 +219,9 @@ footer {
     height: auto;
 }
 
-#carouselProductos {}
+#carouselProductos {
+
+}
 
 
 
