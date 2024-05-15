@@ -68,6 +68,49 @@ body {
     flex-direction: column;
     width: 40%;
 }
+/*Barra animada */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #77db2f;
+  }
+  .marquee-container p {
+    margin: 5px 20px;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    animation-delay: -5s; /* Retraso inicial para que el texto ya esté en movimiento al cargar */
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee-content {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 /* Estilos para la imagen de bienvenida */
 
