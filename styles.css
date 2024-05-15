@@ -14,6 +14,8 @@ a {
 
 body {
     background-color: #f0f0f0;
+    position: relative;
+    top: 100px;
 }
 
 .titulos {
@@ -44,7 +46,6 @@ body {
     justify-content: space-around;
     z-index: 2000;
     width: 100vw;
-
 }
 
 .nav-item {
@@ -59,13 +60,11 @@ body {
 }
 
 /* Estilos para la imagen de bienvenida */
-/* ---------------------------------------- */
+
 .carouselPrincipal {
     height: 70vh;
     width: 100vw;
     overflow: hidden;
-    position: relative;
-    top: 30vh;
 }
 
 .carousel-inner {
@@ -80,7 +79,6 @@ body {
 }
 
 /* Estilos para la sección de galería de productos */
-/* ---------------------------------------- */
 .gallery {
     width: 100vw;
     position: relative;
@@ -138,7 +136,6 @@ body {
 }
 
 /* Estilos específicos para el footer */
-/* ---------------------------------------- */
 footer {
     background-color: #e0c5c5;
     color: #fff;
@@ -202,11 +199,10 @@ footer {
     height: auto;
 }
 
-/* Estilos específicos para dispositivos móviles */
-/* ---------------------------------------- */
+/* Estilos  para dispositivos moviles */
 @media screen and (max-width: 1200px) {}
 
-/* PAGINA PRODUCTOS */
+/* Pagina productos */
 
 #appVueCarousel {
     /*Carousel */
@@ -216,36 +212,43 @@ footer {
     height: auto;
 }
 
-#carouselProductos {
-    border: 2px solid rgb(52, 32, 233);
-}
+#carouselProductos {}
+
+
 
 /* Pagina contactanos */
+
 .form__mail {
-    margin-top: 200px;
-    width: 70%;
-    margin: 200px auto;
-    padding: 20px;
+    width: 40dvw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 .form__mail label {
-    font-size: 1.5em;
+    display: block;
+    color: #333;
+}
+.checkbox- {
+    display: flex;
+    flex-direction: column;
 }
 
-.form__mail h2 {
-    font-size: 1.8rem;
-    color: #584b53;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom: 20px;
+.checkbox- span {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
-.form__mail h3 {
-    font-size: 1.2em;
-    color: #584b53;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+.checkbox- span label {
+    margin-left: 10px;
+}
+
+.form__buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .form__button {
@@ -276,27 +279,21 @@ footer {
     top: 1px;
 }
 
-.form__mail input {
-    background-color: #e5b7ce;
-    border: none;
-    padding: 8px;
+.input-datos {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.input-datos:focus {
+    outline: 3px solid lightskyblue;
+}
+
+.form__mail textarea {
     margin-bottom: 10px;
-    width: 60%;
+    width: 100%;
 }
 
-.form__mail input:focus {
-    width: 70%;
-    background-color: #e0c5c5;
-    border: none;
-}
-
-.form__mail label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #333;
-}
-
+ 
 .ubicacion {
     margin: 20px 0;
     display: flex;
@@ -315,16 +312,8 @@ footer {
     padding: 10px;
 }
 
-.ubicacion h1,
-fieldset legend {
-    font-size: 1.2em;
-    color: #584b53;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.form__mail textarea {
-    margin-bottom: 10px;
-}
+
 
 /*PAGINA FRECUENTES*/
 

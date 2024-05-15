@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de eventos JavaScript</title>
+</head>
+<body>
+    <h1>Eventos JavaScript</h1>
+    <p>Selecciona un evento de la lista y prueba el código JavaScript en la pantalla de prueba:</p>
+    <select id="eventList">
+        <option value="click">click</option>
+        <option value="dblclick">dblclick</option>
+        <option value="mouseover">mouseover</option>
+        <!-- Agrega más eventos aquí -->
+    </select>
+
+    <!-- Pantalla de prueba -->
+    <div id="testScreen" style="border: 1px solid black; padding: 10px; margin-top: 10px;">
+        <h2>Pantalla de prueba</h2>
+        <p>Escribe tu código JavaScript aquí y haz clic en "Ejecutar" para probarlo:</p>
+        <textarea id="codeInput" rows="4" cols="50"></textarea>
+        <button id="runButton">Ejecutar</button>
+        <div id="console" style="border: 1px solid black; padding: 10px; margin-top: 10px; overflow-y: scroll; height: 200px;"></div>
+    </div>
+
+    <script>
+        // Función para ejecutar el código JavaScript ingresado por el usuario
+        function runCode() {
+            // Obtener el evento seleccionado
+            var selectedEvent = document.getElementById('eventList').value;
+            // Obtener el código JavaScript ingresado por el usuario
+            var code = document.getElementById('codeInput').value;
+            try {
+                // Limpiar la consola
+                document.getElementById('console').innerText = '';
+                // Ejecutar el código JavaScript
+                eval(code);
+            } catch (error) {
+                // Mostrar cualquier error en la consola
+                console.error(error.message);
+            }
+        }
+
+        // Agregar un event listener al botón de ejecución
+        document.getElementById('runButton').addEventListener('click', runCode);
+    </script>
+</body>
+</html>
