@@ -199,8 +199,7 @@ footer {
     height: auto;
 }
 
-/* Estilos  para dispositivos moviles */
-@media screen and (max-width: 1200px) {}
+
 
 /* Pagina productos */
 
@@ -218,12 +217,32 @@ footer {
 
 /* Pagina contactanos */
 
-.form__mail {
-    width: 40dvw;
-    margin: 100px auto;
+.cajaContenedoraImgForm{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 100px auto;
+    width: 100dvw;
+    padding: 10px;
+}
+.form__mail {
+    width: 50%;
     justify-content: center;
     text-align: center;
+    min-width: 300px;
+    padding: 50px;
+}
+.cajaImg {
+    width: 50%;
+    height: 50vh;
+    min-width: 700px;
+    flex-wrap: wrap;
+}
+
+.cajaImg img { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .form__mail label {
@@ -360,4 +379,22 @@ footer {
 /* Estilos para el cuarto párrafo dentro de .card-sucursal */
 .carousel-inner-Productos {
     width: 25vw;
+}
+
+
+
+
+/* Estilos  para dispositivos moviles */
+@media screen and (max-width: 1200px) {
+    .cajaContenedoraImgForm{
+        display: flex;
+        flex-direction: column;
+        }
+        .form__mail {
+            width: 100%;
+        }
+        .cajaImg {
+            width: 100%;
+            
+            }
 }

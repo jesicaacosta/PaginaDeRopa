@@ -81,55 +81,62 @@
 
     <main>
 
+        <article class="cajaContenedoraImgForm">
 
-        <section class="form__mail">
-            <fieldset>
+            <section class="form__mail">
+    
+                <fieldset>
+                    <legend class="titulos">Contactanos</legend><br><br>
+    
+                    <form action="/procesar-Formulario" method="post" id="contactForm">
+                        <label for="nombre">🤝 Como te llamas?</label><br>
+                        <input type="text" name="nombre" id="nombreUsuario" required class="input-datos"><br><br>
+    
+                        <label for="mail">⌨ Cuál es tu correo?</label><br>
+                        <input type="email" name="mail" id="mailUsuario" required class="input-datos"><br><br>
+    
+                        <label for="celular">☎ Indicanos también un celular:</label><br>
+                        <input type="tel" name="numero" id="numeroUsuario" required class="input-datos"> <br>
+    
+                        <h3 class="titulos"> Motivo de tu Mensaje:</h3> <br>
+    
+                        <span class="checkbox-">
+                            <span>
+                                <input type="checkbox" name="motivo" id="reclamo" value="reclamo">
+                                <label for="reclamo">  Hacer un reclamo 🙁</label>
+                            </span>
+    
+                            <span>
+                                <input type="checkbox" name="motivo" id="pregunta" value="pregunta">
+                                <label for="pregunta">  Pregunta sobre una prenda  🛠️</label>
+                            </span>
+    
+                            <span>
+                                <input type="checkbox" name="motivo" id="consulta" value="consulta">
+                                <label for="consulta">Consulta sobre una compra realizada 🛒 </label>
+                            </span>
+    
+    
+                        </span>
+    
+    
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        <label for="mensaje" class="titulos">Contanos más! Ingresá tu consulta:📝</label><br>
+    
+                        <div class="form__buttons">
+                            <input type="submit" class="form__button" value="Enviar" id="buttton_enviar">
+                            <input type="reset" class="form__button" value="Reset" id="button_reset">
+                        </div>
+                    </form>
+                </fieldset>
+            </section>
+
+            <section class="cajaImg">
                 <img src="./images/cliente.jpg" alt="" width="300px">
-                <legend class="titulos">Contactanos</legend><br><br>
-
-                <form action="/procesar-Formulario" method="post" id="contactForm">
-                    <label for="nombre">🤝 Como te llamas?</label><br>
-                    <input type="text" name="nombre" id="nombreUsuario" required class="input-datos"><br><br>
-
-                    <label for="mail">⌨ Cuál es tu correo?</label><br>
-                    <input type="email" name="mail" id="mailUsuario" required class="input-datos"><br><br>
-
-                    <label for="celular">☎ Indicanos también un celular:</label><br>
-                    <input type="tel" name="numero" id="numeroUsuario" required class="input-datos"> <br>
-
-                    <h3 class="titulos"> Motivo de tu Mensaje:</h3> <br>
-
-                    <span class="checkbox-">
-                        <span>
-                            <input type="checkbox" name="motivo" id="reclamo" value="reclamo">
-                            <label for="reclamo">  Hacer un reclamo 🙁</label>
-                        </span>
-
-                        <span>
-                            <input type="checkbox" name="motivo" id="pregunta" value="pregunta">
-                            <label for="pregunta">  Pregunta sobre una prenda  🛠️</label>
-                        </span>
-
-                        <span>
-                            <input type="checkbox" name="motivo" id="consulta" value="consulta">
-                            <label for="consulta">Consulta sobre una compra realizada 🛒 </label>
-                        </span>
-
-
-                    </span>
-
-
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    <label for="mensaje" class="titulos">Contanos más! Ingresá tu consulta:📝</label><br>
-
-                    <div class="form__buttons">
-                        <input type="submit" class="form__button" value="Enviar" id="buttton_enviar">
-                        <input type="reset" class="form__button" value="Reset" id="button_reset">
-                    </div>
-                </form>
-            </fieldset>
-        </section>
-
+            </section>
+    
+        </article>
+        
 
 
 
