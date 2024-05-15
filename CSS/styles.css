@@ -1,0 +1,410 @@
+/* Estilos Generales */
+/* 
+$grid-breakpoints: (
+  xs: 0,
+  sm: hasta 576px,
+  md: hasta 768px,
+  lg: hasta 992px,
+  xl: hasta 1200px,
+  xxl: hasta 1400px
+); */
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f0f0f0;
+    position: relative;
+    top: 100px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+}
+
+.titulos {
+    font-family: "Noto Serif", serif;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d82c96;
+    text-align: center;
+}
+
+.subtitulos {
+    font-family: "Noto Serif", serif;
+    text-transform: lowercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 3px auto;
+    color: #9e3174;
+}
+
+
+/*Header */
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    z-index: 2000;
+    width: 100vw;
+}
+
+.nav-item {
+    color: #77db2f;
+    margin: auto 10px;
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+/* Estilos para la imagen de bienvenida */
+
+.carouselPrincipal {
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos para la sección de galería de productos */
+.gallery {
+    width: 100vw;
+    position: relative;
+    top: 160px;
+    margin: 20px auto;
+}
+
+.card {
+    padding: 5px;
+    transition: background-color 0.1s ease;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card-body {
+    text-align: center;
+    width: 100%;
+    height: 70%;
+}
+
+.card-body p {
+    margin: 5px auto;
+}
+
+.card p:first-of-type {
+    color: #584b53;
+    font-weight: bold;
+}
+
+.card:hover {
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.card:hover::before {
+    background-color: #fff;
+    opacity: .1;
+}
+
+/* Estilos específicos para el footer */
+footer {
+    background-color: #e0c5c5;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    top: 100px;
+    bottom: 0;
+    margin-top: 100px;
+    width: 100dvw;
+}
+
+.footer__cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links,
+.envios {
+    flex: 1;
+}
+
+.list-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.list-nav--links,
+.footer___frase p {
+    color: #000000;
+}
+
+.list-nav--links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-nav--links a:hover {
+    color: #584b53;
+    font-weight: bold;
+}
+
+.footer__cont>div {
+    text-align: center;
+}
+
+.footer__cont h2 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #584b53;
+}
+
+.footer__cont img {
+    margin: 1px;
+    width: 2em;
+    height: auto;
+}
+
+.envios img {
+    margin: 8px 2px;
+    width: 4em;
+    height: auto;
+}
+
+
+
+/* Pagina productos */
+
+#appVueCarousel {
+    /*Carousel */
+    position: relative;
+    top: 100px;
+    margin: 100px auto;
+    height: auto;
+}
+
+#carouselProductos {}
+
+
+
+/* Pagina contactanos */
+.container {
+    background-color: #757d6f;
+}
+.cajaContenedoraImgForm{
+    margin: 100px auto;
+    padding: 10px;
+    border: 2px solid red;
+
+}
+.form__mail {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    min-width: 300px;
+    padding: 50px;
+}
+.cajaImg {
+    width: 50%;
+    height: 50vh;
+    min-width: 700px;
+    flex-wrap: wrap;
+}
+
+.cajaImg img { 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.form__mail label {
+    display: block;
+    color: #333;
+}
+.checkbox- {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox- span {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox- span label {
+    margin-left: 10px;
+}
+
+.form__buttons {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form__button {
+    box-shadow: 0px 1px 3px 0px #f2fadc;
+    background: linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    background-color: #dbe6c4;
+    border-radius: 5px;
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #757d6f;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #ced9bf;
+    transition: background 0.3s;
+}
+
+.form__button:hover {
+    background: linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+    background-color: #9ba892;
+}
+
+.form__button:active {
+    position: relative;
+    top: 1px;
+}
+
+.input-datos {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.input-datos:focus {
+    outline: 3px solid lightskyblue;
+}
+
+.form__mail textarea {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+ 
+.ubicacion {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.ubicacion fieldset {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.ubicacion fieldset iframe {
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+
+/*PAGINA FRECUENTES*/
+
+.main__frecuentes {
+    padding: 10px;
+    background-color: #e8d0a1;
+}
+
+/*PAGINA TALLES */
+
+.main__talles {
+    margin: 130px 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main__talles img {
+    margin: 100px auto;
+}
+
+.main__talles h2 {
+    font-size: 1.5em;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.main__talles h4 {
+    font-size: 1.1rem;
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/* PRODUCTOS */
+
+/*PAGINA LOCALES */
+
+.card-sucursal h5 {
+    color: #333;
+}
+
+/* Estilos para el cuarto párrafo dentro de .card-sucursal */
+.carousel-inner-Productos {
+    width: 25vw;
+}
+
+
+
+
+/* Estilos  para dispositivos moviles */
+@media screen and (max-width: 1200px) {
+    .cajaContenedoraImgForm{
+        display: flex;
+        flex-direction: column;
+        }
+        .form__mail {
+            width: 100%;
+        }
+        .cajaImg {
+            width: 100%;
+            
+            }
+}
