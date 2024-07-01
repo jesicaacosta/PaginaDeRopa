@@ -4,51 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moonclothes indumentaria </title>
+    <title>Lunar Nook Velas y Cuadernos</title>
     <meta name="theme-color" content="#e0c5c5">
 
-    <!-- Meta datos poara tarjetas de redes sociales -->
-    <meta property="og:title" content="moonclothes Indumentaria" />
+    <!-- Meta datos para tarjetas de redes sociales -->
+    <meta property="og:title" content="Lunar Nook Velas y Cuadernos" />
     <meta property="og:description"
-        content="Descubre nuestra exclusiva colección de indumentaria femenina para toda ocasión. Explora productos de alta calidad, aprovecha descuentos especiales y vive la moda con moonclothes. 🌟 #ModaFemenina #moonclothesFashion" />
-    <meta property="og:url" content="https://jesicadaiana.github.io/pagmoonclothes/" />
+        content="Explora nuestra colección de velas y cuadernos artesanales. Descubre productos únicos hechos con amor y cuidado." />
+    <meta property="og:url" content="https://tu-sitio-web-aqui.com/" />
 
     <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
 
-    <!-- Imagen diferente para cada pagina -->
-    <meta property="og:image" content="C:\Users\jesic\GitHub\pagmoonclothes\images\1101\re3.jpg" />
-
-    <!-- Incluye el enlace al archivo CSS de Bootstrap para aplicar estilos prediseñados -->
+    <!-- Estilos de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
 
-
-        <!-- Bootstrap local -->
-        <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-
-    <!-- Código CSS  -->
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="./CSS/styles.css">
 
-
-    <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-
-    <!-- Awesome -->
+    <!-- Iconos de Font Awesome -->
     <script src="https://kit.fontawesome.com/7d4a6c3747.js" crossorigin="anonymous"></script>
 
-    <!-- Javascript -->
+    <!-- Script de Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <!-- Script personalizado -->
     <script src="script.js" defer></script>
 
 </head>
 
 <body>
     <header>
-
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="100px" alt="logo"
                     class="logo-principal"></a>
@@ -66,15 +58,15 @@
                         <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="locales.html">Locales</a>
+                        <a class="nav-link " href="nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="contactanos.html">Contacto</a>
+                        <a class="nav-link " href="contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group">
-                        <input class="form-control" type="search" placeholder="buscar...">
+                        <input class="form-control" type="search" placeholder="Buscar...">
                         <div class="input-group-append">
                             <button class="btn btn-outline-success" type="submit">⮕</button>
                         </div>
@@ -83,82 +75,7 @@
             </div>
         </nav>
     </header>
-
-<body>
-    <header>
-    </header>
-
-    <!-- Menu  Pc -->
-    <nav class="navbar">
-        <span class="logo-principal">
-            <a href="index.html">            
-                <img src="images/logo.png" width="200px" alt="logo" >
-            </a>
-        </span>
-
-        <ul class="nav__links">
-            <li class="nav__pc__links"><a href="index.html">
-                    <i class="fas fa-home"></i> Inicio </a>
-            </li>
-            <li class="nav__pc__links"><a href="productos.html">
-                    <i class="fas fa-gift"></i></i> Productos</a>
-            </li>
-            <li class="nav__pc__links"><a href="locales.html">
-                    <i class="fas fa-city"></i> Locales</a>
-            </li>
-            <li class="nav__pc__links"><a href="contactanos.html">
-                    <i class="fas fa-address-book"></i> Contacto</a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <!-- Menú responsive para dispositivos móviles -->
-    <div class="navbar__responsive">
-
-        <div class="nav_bars" id="menuIcon"> <i class="fas fa-bars"></i> </div>
-
-    <ul class="nav__responsive__links  " id="responsiveMenu">
-        <li class="navbar__responsive__links"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-        <li class="navbar__responsive__links"><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
-        <li class="navbar__responsive__links"><a href="locales.html"><i class="fas fa-city"></i> Locales</a></li>
-        <li class="navbar__responsive__links"><a href="contactanos.html"><i class="fas fa-address-book"></i> Contacto</a></li>
-        <span class="logo-principal">
-            <a href="index.html">            
-                <img src="images/logo.png" width="200px" alt="logo" >
-            </a>
-        </span>
-    </ul>
-</div>
-
-        <!-- Imagen de bienvenida animada -->
-            <div id="carouselMetasAutoplaying" class="carousel slide carouselMetas carouselPrincipal"
-                data-bs-ride="carousel">
-                <div class="carousel-inner"> <!-- Interior del carousel-->
-                    <div class="carousel-item active">
-                        <img src="./images/carrousel/carrousel(1).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carrousel/carrousel(2).jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carrousel/carrousel(3).jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMetasAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMetasAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-
-        
-   
+ 
 
     <main>
         <section class="container mt-4">

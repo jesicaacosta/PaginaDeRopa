@@ -87,35 +87,37 @@
 
     <main>
 
-        <div id="appVueCarousel">
-            <div id="carouselProductos" class="carousel slide" data-ride="carousel">
-
-                <div class="carousel-inner carousel-inner-Productos">
-                    <div v-for="(producto, index) in productos" :key="index"
-                        :class="{ 'carousel-item': true, 'active': index === 0 }">
-                        <img :src="producto.imagen" class="d-block w-100" :alt="'Slide ' + (index + 1)">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ producto.descripcion }}</h5>
-                            <p>Precio: {{ producto.precio }}</p>
-                            <p>{{ producto.cuotas }}</p>
-                            <a :href="'producto-detalle.html?id=' + index" class="btn btn-primary">Detalles</a>
-                        </div>
-                    </div>
-
-
-                </div>
-                <!-- <a class="carousel-control-prev" href="#carouselProductos" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselProductos" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a> -->
-
-            </div>
-        </div>
-
+         <main class="container my-5">
+                  <section class="text-center mb-5">
+                      <h1>Quiénes Somos</h1>
+                      <p class="lead">Conoce más sobre Lunar Nook y su fundadora</p>
+                  </section>
+                  
+                  <section class="row">
+                      <div class="col-md-6 mb-4">
+                          <img src="\images\VELAS (11).jpg"" alt="Jessica" class="img-fluid rounded">
+                      </div>
+                      <div class="col-md-6">
+                          <p>Hola, soy Jesica, estudiante de Ingeniería y Programación. Creé Lunar Nook como un emprendimiento personal para financiar mis estudios y seguir creciendo profesionalmente. Desde la mano de obra hasta las entregas, me encargo de cada detalle para asegurar la mejor calidad y servicio a mis clientes.</p>
+                          <p>Me manejo a través de redes sociales para promover mis productos y conectarme con mis clientes. Mi dedicación y pasión por lo que hago se refleja en cada vela que fabrico y en cada pedido que entrego.</p>
+                      </div>
+                  </section>
+                  
+                  <section class="mt-5">
+                      <h2>Nuestra Misión</h2>
+                      <p>En Lunar Nook, nuestra misión es ofrecer productos únicos y de alta calidad que iluminen tus momentos especiales. Creemos en la importancia de los pequeños detalles y nos esforzamos por brindar una experiencia excepcional a cada cliente.</p>
+                  </section>
+                  
+                  <section class="mt-5">
+                      <h2>Nuestras Redes Sociales</h2>
+                      <p>Síguenos en nuestras redes sociales para estar al tanto de las últimas novedades y ofertas especiales:</p>
+                      <ul class="list-unstyled">
+                          <li><a href="https://www.instagram.com/lunarnook">Instagram</a></li>
+                          <li><a href="https://www.facebook.com/lunarnook">Facebook</a></li>
+                          <li><a href="https://www.twitter.com/lunarnook">Twitter</a></li>
+                      </ul>
+                  </section>
+              </main>
 
     </main>
 
@@ -162,53 +164,6 @@
 
                 </div>
     </footer>
-
-
-    <script>
-        new Vue({
-            el: '#appVueCarousel',
-            data: {
-                productos: [
-                    {
-                        imagen: 'images/Sweater/d.jpg',
-                        descripcion: 'Producto 1',
-                        precio: '$100',
-                        cuotas: '3 cuotas de $33.33'
-                    },
-                    {
-                        imagen: 'images/Sweater/h.jpg',
-                        descripcion: 'Producto 2',
-                        precio: '$150',
-                        cuotas: '3 cuotas de $50'
-                    },
-                    {
-                        imagen: 'images/producto3.jpg',
-                        descripcion: 'Producto 3',
-                        precio: '$120',
-                        cuotas: '3 cuotas de $40'
-                    },
-                    {
-                        imagen: 'images/producto4.jpg',
-                        descripcion: 'Producto 4',
-                        precio: '$180',
-                        cuotas: '3 cuotas de $60'
-                    },
-                    {
-                        imagen: 'images/producto5.jpg',
-                        descripcion: 'Producto 5',
-                        precio: '$90',
-                        cuotas: '3 cuotas de $30'
-                    },
-                    {
-                        imagen: 'images/producto6.jpg',
-                        descripcion: 'Producto 6',
-                        precio: '$200',
-                        cuotas: '3 cuotas de $66.67'
-                    }
-                ]
-            },
-        });
-    </script>
 
 
 

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>moonclothes indumentaria </title>
+    <title>lunar nook velas y cuadernos</title>
     <meta name="theme-color" content="#e0c5c5">
 
     <!-- Meta datos poara tarjetas de redes sociales -->
     <meta property="og:title" content="moonclothes Indumentaria" />
     <meta property="og:description"
-        content="Descubre nuestra exclusiva colección de indumentaria femenina para toda ocasión. Explora productos de alta calidad, aprovecha descuentos especiales y vive la moda con moonclothes. 🌟 #ModaFemenina #moonclothesFashion" />
+    content="Descubre nuestra exclusiva colección de velas y cuadernos artesanales. Explora productos únicos, aprovecha descuentos especiales y disfruta del arte con lunar nook. 🌙 #VelasArtesanales #CuadernosHechosAMano" />
     <meta property="og:url" content="https://jesicadaiana.github.io/pagmoonclothes/" />
 
     <!-- Fuentes Google -->
@@ -33,6 +33,7 @@
 
     <!-- Código CSS  -->
     <link rel="stylesheet" href="./CSS/styles.css">
+
 
     <!-- Incluye el script de Vue.js para habilitar la funcionalidad de Vue.js en la página -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -65,10 +66,10 @@
                         <a class="nav-link" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="locales.html">Locales</a>
+                        <a class="nav-link " href="quienes.html">Quienes somos?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contactanos.html">Contacto</a>
+                        <a class="nav-link " href="contactanos.html">Contacto</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -84,144 +85,99 @@
     </header>
 
     <main>
-
         <div class="container cajaContenedoraImgForm">
             <div class="row">
-
-                    <!-- Columna formulario -->
+                <!-- Columna formulario -->
                 <section class="col form__mail">
-    
                     <fieldset>
-                        <legend class="titulos">Contactanos</legend><br><br>
-        
-                        <form action="/procesar-Formulario" method="post" id="contactForm">
-                            <label for="nombre">🤝 Como te llamas?</label><br>
+                        <legend class="titulos">Contáctanos</legend><br><br>
+                        <form action="/procesar-formulario" method="post" id="contactForm">
+                            <label for="nombre">¿Cómo te llamas?</label><br>
                             <input type="text" name="nombre" id="nombreUsuario" required class="input-datos"><br><br>
-        
-                            <label for="mail">⌨ Cuál es tu correo?</label><br>
+
+                            <label for="mail">¿Cuál es tu correo?</label><br>
                             <input type="email" name="mail" id="mailUsuario" required class="input-datos"><br><br>
-        
-                            <label for="celular">☎ Indicanos también un celular:</label><br>
-                            <input type="tel" name="numero" id="numeroUsuario" required class="input-datos"> <br>
-                            <br>
-                            <h3 class="titulos"> Motivo de tu Mensaje:</h3> 
-        
-                            <span class=" row checkbox-">
-                                <span>
-                                    <input type="checkbox" name="motivo" id="reclamo" value="reclamo">
-                                    <label for="reclamo">  Hacer un reclamo 🙁</label>
-                                </span>
-        
-                                <span>
-                                    <input type="checkbox" name="motivo" id="pregunta" value="pregunta">
-                                    <label for="pregunta">  Pregunta sobre una prenda  🛠️</label>
-                                </span>
-        
+
+                            <label for="celular">Indícanos también un número de celular:</label><br>
+                            <input type="tel" name="numero" id="numeroUsuario" required class="input-datos"><br><br>
+
+                            <h3 class="titulos">Motivo de tu Mensaje:</h3>
+                            <span class="row checkbox-">
                                 <span>
                                     <input type="checkbox" name="motivo" id="consulta" value="consulta">
-                                    <label for="consulta">Consulta sobre una compra realizada 🛒 </label>
+                                    <label for="consulta">Consulta sobre productos</label>
                                 </span>
-        
-        
+
+                                <span>
+                                    <input type="checkbox" name="motivo" id="personalizado" value="personalizado">
+                                    <label for="personalizado">Pedido personalizado</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" name="motivo" id="otro" value="otro">
+                                    <label for="otro">Otro motivo</label>
+                                </span>
                             </span>
-        
-        
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                            <label for="mensaje" class="titulos">Contanos más! Ingresá tu consulta:📝</label><br>
-        
+
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                placeholder="Escribe tu mensaje aquí..."></textarea><br>
+
                             <div class="form__buttons">
-                                <input type="submit" class="form__button" value="Enviar" id="buttton_enviar">
+                                <input type="submit" class="form__button" value="Enviar" id="button_enviar">
                                 <input type="reset" class="form__button" value="Reset" id="button_reset">
                             </div>
                         </form>
                     </fieldset>
                 </section>
-                
+
                 <!-- Columna Imagen -->
-                <section class=" col cajaImg">
-                    <img src="./images/cliente.jpg" alt="" width="300px">
+                <section class="col cajaImg">
+                    <img src="images/cliente.jpg" alt="Imagen de cliente" width="300px">
                 </section>
-
-
             </div>
-
-    
         </div>
-        
-
-
 
         <section class="ubicacion">
-
-            <h2>Donde nos ubicamos? </h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar"
+            <h2>¿Dónde nos ubicamos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190078.71787358812!2d12.48473068268215!3d41.89328792412334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b36be83f85%3A0x9a50373e5428537d!2sMamertine%20Prison!5e0!3m2!1sen!2sar!4v1698719189217!5m2!1sen!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         </section>
     </main>
 
-
-
     <footer>
-        <div>
+        <div class="footer__cont">
             <!-- Footer -->
-            <div class="footer__cont">
+            <div class="footer__links">
+                <!-- Redes sociales -->
+                <ul class="list-nav">
+                    <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i> Contactanos por WhatsApp</a></li>
+                    <li class="list-nav--links"><a href="contactanos.html">Contacto</a></li>
+                    <li class="list-nav--links"><a href="#">Medios de pago</a></li>
+                    <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a>
+                    </li>
+                </ul>
 
-                <div class="footer__links">
-                    <!-- Redes sociales -->
-                    <ul class="list-nav">
-                        <li class="list-nav--links"><a href="https://web.whatsapp.com/" target="_blank"><i
-                                    class="fa fa-whatsapp" aria-hidden="true"></i> Hablanos por whatsapp:</a> </li>
-                        <li class="list-nav--links"><a href="contactanos.html">Contactanos</a></li>
-                        <li class="list-nav--links"><a href="#"> Medios de pago</a></li>
-                        <li class="list-nav--links"><a href="frecuentes.html" target="_blank">Preguntas frecuentes</a>
-                        </li>
-                        <p> "Viste con estilo y confianza, descubre la moda que te hace sentir única."</p>
-                    </ul>
-
-
-                    <!-- Medios de pago -->
-                    <div>
-                        <h2>MEDIOS DE PAGO</h2>
-                        <img src="images/medios/visa.png" alt="visa" width="50px">
-                        <img src="images/medios/master.png" alt="visa" width="50px">
-                        <img src="images/medios/american.png" alt="visa" width="50px">
-                        <img src="images/medios/diner.png" alt="visa" width="50px">
-                        <img src="images/medios/banelco.png" alt="visa" width="50px">
-                        <img src="images/medios/cabal.png" alt="visa" width="50px">
-                        <img src="images/medios/naranja.png" alt="visa" width="50px">
-                        <img src="images/medios/shopp.png" alt="visa" width="50px">
-                        <img src="images/medios/mp.png" alt="visa" width="50px">
-                        <img src="images/medios/arg.png" alt="visa" width="50px">
-                        <img src="images/medios/cenco.png" alt="visa" width="50px">
-                        <img src="images/medios/pago.png" alt="visa" width="50px">
-                        <img src="images/medios/rapi.png" alt="visa" width="50px">
-                    </div>
-
-                    <div class="envios">
-                        <h2>FORMAS DE ENVÍO</h2>
-                        <img src="images/medios/envio.png" alt="visa" width="50px">
-                        <img src="images/medios/correo.png" alt="visa" width="50px">
-                    </div>
-
+                <!-- Medios de pago -->
+                <div class="medios-pago">
+                    <h2>Medios de Pago</h2>
+                    <img src="images/medios/visa.png" alt="Visa" width="50px">
+                    <img src="images/medios/master.png" alt="Mastercard" width="50px">
+                    <img src="images/medios/paypal.png" alt="PayPal" width="50px">
+                    <img src="images/medios/mercadopago.png" alt="MercadoPago" width="50px">
                 </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Incluye el script de jQuery, que es una biblioteca de JavaScript, para facilitar la manipulación del DOM y otras operaciones -->
+    <!-- Scripts de Bootstrap y jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
-    <!-- Incluye el script de Popper.js, una biblioteca que se utiliza junto con Bootstrap para manejar la posición de los elementos emergentes y otras interacciones -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-
-    <!-- Incluye el script de Bootstrap, que proporciona funcionalidades y estilos predefinidos para mejorar el diseño y la interactividad de la página -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap local para JS--> 
+    <!-- Bootstrap local -->
     <script src="./JS/bootstrap.min.js"></script>
-
-
 </body>
 
 </html>
