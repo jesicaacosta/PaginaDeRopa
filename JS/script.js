@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', function () {
          let form = document.getElementById('contactForm');
          form.addEventListener('submit', function (event) {
                   event.preventDefault(); // Evita que se envíe el formulario por defecto
-                  alert("El mensaje será enviado " + nombreUsuario + "!");
+                  alert(`El mensaje será enviado ${nombreUsuario}!` )
                   form.submit();
          });
 
          //Reseteat formulario 
-         let resetButton = document.getElementById('button_reset'); //declaro resetButon como el elemento html con el id button_reset
+         let resetButton = document.getElementById('c'); //declaro resetButon como el elemento html con el id button_reset
          resetButton.addEventListener('click', function () { // resetButton usa addEventListener para escuchar el evento 'click' la cual llama a una funcion 
                   let confirmReset = confirm("¿Estás seguro de que deseas resetear el formulario?");
                   if (confirmReset) {
